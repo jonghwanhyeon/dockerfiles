@@ -10,7 +10,10 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 VOLUME /notebooks
 WORKDIR /notebooks
 
+# Jupyter
 EXPOSE 8888
+# Tensorboard
+EXPOSE 6006
 
 # See: https://github.com/ipython/ipython/issues/7062
 # CMD ["jupyter", "notebook"]
