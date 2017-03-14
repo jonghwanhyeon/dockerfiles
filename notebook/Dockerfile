@@ -5,6 +5,10 @@ MAINTAINER Jonghwan Hyeon <hyeon0145@gmail.com>
 RUN pip3 --no-cache-dir install \
     jupyter
 
+RUN pip3 --no-cache-dir install \
+    jupyter_nbextensions_configurator
+RUN jupyter nbextensions_configurator enable --system
+
 COPY jupyter_notebook_config.py /root/.jupyter/
 
 VOLUME /notebooks
