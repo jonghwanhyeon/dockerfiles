@@ -3,13 +3,11 @@ FROM keci/ml:latest
 MAINTAINER Jonghwan Hyeon <hyeon0145@gmail.com>
 
 RUN pip3 --no-cache-dir install \
-    jupyter
+    jupyter jupyter_contrib_nbextensions jupyter_nbextensions_configurator
 
-RUN pip3 --no-cache-dir install jupyter_contrib_nbextensions
 RUN jupyter contrib nbextension install --system
-
-RUN pip3 --no-cache-dir install jupyter_nbextensions_configurator
 RUN jupyter nbextensions_configurator enable --system
+RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
 COPY jupyter_notebook_config.py /root/.jupyter/
 
