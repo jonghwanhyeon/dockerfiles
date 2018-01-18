@@ -1,21 +1,20 @@
-FROM nvidia/cuda:8.0-cudnn5-devel
+FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
 
 MAINTAINER Jonghwan Hyeon <hyeon0145@gmail.com>
 
-RUN apt-get update && apt-get install -y \
-    git \
-    curl \
-    libzmq3-dev \
-    python3-dev \
-&& rm -rf /var/lib/apt/lists/*
+ENV LANG=C.UTF-8
 
-RUN curl  https://bootstrap.pypa.io/get-pip.py | python3
+RUN sed -i "s/archive\.ubuntu/kr.archive.ubuntu/g" /etc/apt/sources.list
+
+RUN apt-get update && apt-get install -y \
+    libcupti-dev \
+    python3-dev \
+    python3-pip \
+&& rm -rf /var/lib/apt/lists/*
 
 RUN pip3 --no-cache-dir install \
     numpy \
     scipy \
+    scikit-learn \
     tensorflow-gpu \
-    Theano \
-    sklearn \
-    keras \
-    matplotlib
+    keras
