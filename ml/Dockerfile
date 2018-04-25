@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 
 MAINTAINER Jonghwan Hyeon <hyeon0145@gmail.com>
 
@@ -7,7 +7,6 @@ ENV LANG=C.UTF-8
 RUN sed -i "s/archive\.ubuntu/kr.archive.ubuntu/g" /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
-    libcupti-dev \
     python3-dev \
     python3-pip \
 && rm -rf /var/lib/apt/lists/*
@@ -18,3 +17,5 @@ RUN pip3 --no-cache-dir install \
     scikit-learn \
     tensorflow-gpu \
     keras
+
+ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
