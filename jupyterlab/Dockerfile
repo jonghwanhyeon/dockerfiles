@@ -6,15 +6,13 @@ RUN pip3 --no-cache-dir install \
     jupyter \
     jupyterlab
 
-RUN jupyter serverextension enable --py jupyterlab --sys-prefix
-
 COPY jupyter_notebook_config.py /root/.jupyter/
 
 VOLUME /notebooks
 WORKDIR /notebooks
 
 # Jupyter
-EXPOSE 8888
+EXPOSE 80
 # Tensorboard
 EXPOSE 6006
 

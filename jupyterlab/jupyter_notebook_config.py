@@ -20,4 +20,4 @@ c.NotebookApp.notebook_dir = '/notebooks'
 c.NotebookApp.open_browser = False
 
 ## The port the notebook server will listen on.
-c.NotebookApp.port = 8888
+c.NotebookApp.port = 80
