@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 --no-cache-dir install --upgrade pip
 
 RUN pip3 --no-cache-dir install \
-    numpy \
+    "numpy <= 1.14.5" \
     scipy \
     scikit-learn \
     tensorflow-gpu \
