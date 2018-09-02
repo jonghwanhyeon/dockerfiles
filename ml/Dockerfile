@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
 && rm -rf /var/lib/apt/lists/*
 
+RUN pip3 --no-cache-dir install --upgrade pip
+
 RUN pip3 --no-cache-dir install \
     numpy \
     scipy \
