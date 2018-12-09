@@ -18,8 +18,15 @@ RUN pip3 --no-cache-dir install --upgrade pip
 
 RUN pip3 --no-cache-dir install \
     numpy \
-    scipy \
-    scikit-learn \
+    scipy
+
+RUN pip3 --no-cache-dir install scikit-learn
+
+RUN pip3 --no-cache-dir install \
+    torch \
+    torchvision
+
+RUN pip3 --no-cache-dir install \
     tensorflow-gpu \
     keras
 
