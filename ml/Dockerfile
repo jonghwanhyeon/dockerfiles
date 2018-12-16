@@ -24,6 +24,7 @@ RUN pip3 --no-cache-dir install \
     pytorch-ignite \
     tensorflow-gpu \
     keras \
-    scikit-learn
+    scikit-learn \
+    pandas
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
