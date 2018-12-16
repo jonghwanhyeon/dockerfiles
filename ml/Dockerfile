@@ -1,6 +1,6 @@
 FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 
-MAINTAINER Jonghwan Hyeon <hyeon0145@gmail.com>
+LABEL maintainer="hyeon0145@gmail.com"
 
 ENV LANG=C.UTF-8
 
