@@ -1,6 +1,6 @@
 FROM hyeon0145/jupyter:latest
 
-MAINTAINER Jonghwan Hyeon <hyeon0145@gmail.com>
+LABEL maintainer="hyeon0145@gmail.com"
 
 RUN pip3 --no-cache-dir install jupyterlab
 
