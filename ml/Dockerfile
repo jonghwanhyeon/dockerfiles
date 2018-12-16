@@ -25,6 +25,8 @@ RUN pip3 --no-cache-dir install \
     tensorflow-gpu \
     keras \
     scikit-learn \
-    pandas
+    pandas \
+    matplotlib \
+    seaborn
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
