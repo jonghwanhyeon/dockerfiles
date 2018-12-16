@@ -18,9 +18,8 @@ RUN pip3 --no-cache-dir install --upgrade pip
 
 RUN pip3 --no-cache-dir install \
     numpy \
-    scipy
-
-RUN pip3 --no-cache-dir install scikit-learn
+    scipy \
+    scikit-learn
 
 RUN pip3 --no-cache-dir install \
     torch \
