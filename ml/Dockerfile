@@ -19,14 +19,10 @@ RUN pip3 --no-cache-dir install --upgrade pip
 RUN pip3 --no-cache-dir install \
     numpy \
     scipy \
-    scikit-learn
-
-RUN pip3 --no-cache-dir install \
     torch \
-    torchvision
-
-RUN pip3 --no-cache-dir install \
+    torchvision \
     tensorflow-gpu \
-    keras
+    keras \
+    scikit-learn
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
