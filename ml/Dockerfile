@@ -27,6 +27,7 @@ RUN pip3 --no-cache-dir install \
     scikit-learn \
     pandas \
     matplotlib \
-    seaborn
+    seaborn \
+    tqdm
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
