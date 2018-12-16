@@ -21,6 +21,7 @@ RUN pip3 --no-cache-dir install \
     scipy \
     torch \
     torchvision \
+    pytorch-ignite \
     tensorflow-gpu \
     keras \
     scikit-learn
