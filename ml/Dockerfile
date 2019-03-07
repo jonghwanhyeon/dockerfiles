@@ -19,7 +19,7 @@ RUN pip3 --no-cache-dir install --upgrade pip
 RUN pip3 --no-cache-dir install \
     numpy \
     scipy \
-    torch \
+    https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp36-cp36m-linux_x86_64.whl \
     torchvision \
     pytorch-ignite \
     tensorflow-gpu \
