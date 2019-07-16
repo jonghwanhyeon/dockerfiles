@@ -27,6 +27,7 @@ RUN pip3 --no-cache-dir install \
     pandas \
     matplotlib \
     seaborn \
+    plotly \
     tqdm
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
