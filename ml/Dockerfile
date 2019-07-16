@@ -22,8 +22,7 @@ RUN pip3 --no-cache-dir install \
     https://download.pytorch.org/whl/cu100/torch-1.1.0-cp36-cp36m-linux_x86_64.whl \
     https://download.pytorch.org/whl/cu100/torchvision-0.3.0-cp36-cp36m-linux_x86_64.whl \
     pytorch-ignite \
-    tensorflow-gpu \
-    keras \
+    tensorflow-gpu==2.0.0-beta1 \
     scikit-learn \
     pandas \
     matplotlib \
