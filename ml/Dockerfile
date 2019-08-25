@@ -22,7 +22,7 @@ RUN pip3 install \
     torch \
     torchvision \
     pytorch-ignite \
-    tensorflow-gpu==2.0.0-beta1 \
+    tensorflow-gpu==2.0.0-rc0 \
     scikit-learn \
     pandas \
     matplotlib \
