@@ -4,7 +4,7 @@ LABEL maintainer="hyeon0145@gmail.com"
 
 ENV LANG=C.UTF-8
 
-RUN sed -i "s/archive\.ubuntu/kr.archive.ubuntu/g" /etc/apt/sources.list
+RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
     python3-dev \
