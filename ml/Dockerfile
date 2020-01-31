@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
 LABEL maintainer="hyeon0145@gmail.com"
 
@@ -26,7 +26,7 @@ RUN pip3 install \
     scikit-learn \
     scipy \
     seaborn \
-    tensorflow-gpu \
+    tensorflow \
     torch \
     torchvision \
     tqdm
