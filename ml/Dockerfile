@@ -49,7 +49,7 @@ RUN pip3 install \
 
 RUN curl \
     --location --output /tmp/orca-x86_64.AppImage \
-    https://github.com/plotly/orca/releases/download/v1.2.1/orca-1.2.1-x86_64.AppImage \
+    https://github.com/plotly/orca/releases/download/v1.3.0/orca-1.3.0.AppImage \
 && chmod +x /tmp/orca-x86_64.AppImage
 
 WORKDIR /usr/local/share
