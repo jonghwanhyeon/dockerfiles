@@ -1,2 +1,2 @@
 #!/bin/bash
-xvfb-run -a /usr/local/share/orca/app/orca "$@"
+xvfb-run -a /usr/local/share/orca/orca "$@"
