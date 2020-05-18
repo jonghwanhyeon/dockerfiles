@@ -36,7 +36,7 @@ RUN pip3 install \
 RUN apt-get update && apt-get install -y \
     libasound2 \
     libgconf-2-4 \
-    libgtk2.0-0 \
+    libgtk-3-0 \
     libnss3 \
     libxss1 \
     libxtst6 \
@@ -49,7 +49,7 @@ RUN pip3 install \
 
 RUN curl \
     --location --output /tmp/orca-x86_64.AppImage \
-    https://github.com/plotly/orca/releases/download/v1.3.0/orca-1.3.0.AppImage \
+    https://github.com/plotly/orca/releases/download/v1.3.1/orca-1.3.1.AppImage \
 && chmod +x /tmp/orca-x86_64.AppImage
 
 WORKDIR /usr/local/share
