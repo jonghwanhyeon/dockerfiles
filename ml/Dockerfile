@@ -22,15 +22,18 @@ RUN pip3 install \
     numpy \
     pandas \
     plotly \
-    pytorch-ignite \
     scikit-learn \
     scipy \
     seaborn \
     tensorflow \
-    torch \
-    torchvision \
     tqdm
 
+RUN pip3 install \
+    --find-links=https://download.pytorch.org/whl/torch_stable.html \
+    torch==1.5.0+cu101 \
+    torchvision==0.6.0+cu101
+
+RUN pip3 install pytorch-ignite
 
 # To support static image export of plotly figures
 RUN apt-get update && apt-get install -y \
