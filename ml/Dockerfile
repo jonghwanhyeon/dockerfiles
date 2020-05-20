@@ -34,31 +34,3 @@ RUN pip3 install \
     torchvision==0.6.0+cu101
 
 RUN pip3 install pytorch-ignite
-
-# To support static image export of plotly figures
-RUN apt-get update && apt-get install -y \
-    libasound2 \
-    libgconf-2-4 \
-    libgtk-3-0 \
-    libnss3 \
-    libxss1 \
-    libxtst6 \
-    xvfb \
-&& rm -rf /var/lib/apt/lists/*
-
-RUN pip3 install \
-    psutil \
-    requests
-
-RUN curl \
-    --location --output /tmp/orca-x86_64.AppImage \
-    https://github.com/plotly/orca/releases/download/v1.3.1/orca-1.3.1.AppImage \
-&& chmod +x /tmp/orca-x86_64.AppImage
-
-WORKDIR /usr/local/share
-RUN /tmp/orca-x86_64.AppImage --appimage-extract && mv squashfs-root orca
-RUN rm /tmp/orca-x86_64.AppImage
-
-WORKDIR /usr/local/bin
-COPY orca /usr/local/bin/orca
-RUN chmod +x /usr/local/bin/orca

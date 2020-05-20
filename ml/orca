@@ -1,2 +1,0 @@
-#!/bin/bash
-xvfb-run -a /usr/local/share/orca/orca --no-sandbox "$@"
