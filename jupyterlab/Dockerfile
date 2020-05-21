@@ -9,6 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs && rm -rf /var/lib/apt/lists/*
 
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
+RUN jupyter labextension install @bokeh/jupyter_bokeh --no-build
 
 RUN NODE_OPTIONS=--max-old-space-size=4096 jupyter lab build
 
