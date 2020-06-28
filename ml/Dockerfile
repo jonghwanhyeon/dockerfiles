@@ -20,7 +20,6 @@ RUN pip3 install \
     matplotlib \
     numpy \
     pandas \
-    plotly \
     scikit-learn \
     scipy \
     seaborn \
