@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+FROM jonghwanhyeon/cuda:10.1-python3
 
 LABEL maintainer="hyeon0145@gmail.com"
 
@@ -10,8 +10,6 @@ RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 RUN apt-get update && apt-get install -y \
     curl \
     git \
-    python3-dev \
-    python3-pip \
     wget \
 && rm -rf /var/lib/apt/lists/*
 
@@ -31,7 +29,7 @@ RUN pip3 install \
 
 RUN pip3 install \
     --find-links=https://download.pytorch.org/whl/torch_stable.html \
-    torch==1.5.0+cu101 \
-    torchvision==0.6.0+cu101
+    torch==1.5.1+cu101 \
+    torchvision==0.6.1+cu101
 
 RUN pip3 install pytorch-ignite
