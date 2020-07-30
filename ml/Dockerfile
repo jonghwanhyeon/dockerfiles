@@ -31,8 +31,8 @@ RUN pip3 install --no-cache-dir \
         tqdm
 
 RUN pip3 install --no-cache-dir --find-links=https://download.pytorch.org/whl/torch_stable.html \
-        torch==1.5.1+cu101 \
-        torchvision==0.6.1+cu101
+        torch==1.6.0+cu101 \
+        torchvision==0.7.0+cu101
 
 RUN pip3 install \
         pytorch-ignite
