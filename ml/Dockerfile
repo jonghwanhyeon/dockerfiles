@@ -19,9 +19,11 @@ RUN pip3 install --no-cache-dir --upgrade \
         wheel
 
 RUN pip3 install --no-cache-dir \
+        kaleido \
         matplotlib \
         numpy \
         pandas \
+        plotly \
         scikit-learn \
         scipy \
         seaborn \
