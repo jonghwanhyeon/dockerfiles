@@ -21,11 +21,11 @@ RUN pip3 install --no-cache-dir --upgrade \
 RUN pip3 install --no-cache-dir \
         kaleido \
         matplotlib \
-        numpy \
+        "numpy<1.19.0" \
         pandas \
         plotly \
         scikit-learn \
-        scipy \
+        "scipy==1.4.1" \
         seaborn \
         tensorflow \
         tqdm
