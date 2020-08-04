@@ -2,13 +2,16 @@ FROM jonghwanhyeon/jupyter:latest
 
 LABEL maintainer="hyeon0145@gmail.com"
 
-RUN pip3 --no-cache-dir install jupyterlab
+RUN pip3 install --no-cache-dir xeus-python
+RUN pip3 install --no-cache-dir jupyterlab
 
 # for JupyterLab extensions
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs && rm -rf /var/lib/apt/lists/*
 
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
+
+RUN jupyter labextension install @jupyterlab/debugger --no-build
 
 RUN jupyter labextension install jupyterlab-plotly --no-build
 RUN jupyter labextension install plotlywidget --no-build
