@@ -3,6 +3,8 @@ FROM jonghwanhyeon/cuda:10.1-python3
 LABEL maintainer="hyeon0145@gmail.com"
 
 ENV LANG=C.UTF-8
+ENV SHELL=/bin/bash
+
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 
 RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
