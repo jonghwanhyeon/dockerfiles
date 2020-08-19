@@ -12,4 +12,4 @@ VOLUME /vscode
 # code-server
 EXPOSE 8080
 
-CMD code-server --bind-addr="0.0.0.0:8080" --user-data-dir="/vscode" .
+CMD code-server --bind-addr="0.0.0.0:8080" --user-data-dir="/vscode" --disable-telemetry .
