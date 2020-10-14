@@ -1,4 +1,4 @@
-FROM jonghwanhyeon/jupyter:latest
+FROM ghcr.io/jonghwanhyeon/jupyter:latest
 
 LABEL maintainer="hyeon0145@gmail.com"
 

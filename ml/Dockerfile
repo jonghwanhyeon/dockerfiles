@@ -1,4 +1,4 @@
-FROM jonghwanhyeon/cuda:10.1-python3
+FROM ghcr.io/jonghwanhyeon/cuda:10.1-python3.8
 
 LABEL maintainer="hyeon0145@gmail.com"
 
@@ -23,11 +23,11 @@ RUN pip3 install --no-cache-dir --upgrade \
 RUN pip3 install --no-cache-dir \
         kaleido \
         matplotlib \
-        "numpy<1.19.0" \
+        numpy \
         pandas \
         plotly \
         scikit-learn \
-        "scipy==1.4.1" \
+        scipy \
         seaborn \
         tensorflow \
         tqdm

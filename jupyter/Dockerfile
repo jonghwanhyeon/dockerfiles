@@ -1,4 +1,4 @@
-FROM jonghwanhyeon/ml:latest
+FROM ghcr.io/jonghwanhyeon/ml:latest
 
 LABEL maintainer="hyeon0145@gmail.com"
 
