@@ -1,6 +1,7 @@
 FROM ghcr.io/jonghwanhyeon/ml:latest
 
-LABEL maintainer="hyeon0145@gmail.com"
+LABEL maintainer="hyeon0145@gmail.com" \
+      org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 RUN pip3 install --no-cache-dir jupyter
 

@@ -1,6 +1,7 @@
 FROM ghcr.io/jonghwanhyeon/jupyter:latest
 
-LABEL maintainer="hyeon0145@gmail.com"
+LABEL maintainer="hyeon0145@gmail.com" \
+      org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 RUN pip3 install --no-cache-dir xeus-python
 RUN pip3 install --no-cache-dir jupyterlab

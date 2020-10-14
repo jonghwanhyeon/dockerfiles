@@ -1,6 +1,7 @@
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
-LABEL maintainer="hyeon0145@gmail.com"
+LABEL maintainer="hyeon0145@gmail.com" \
+      org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 ENV PYTHON_VERSION 3.7.7
 

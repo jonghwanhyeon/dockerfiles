@@ -1,6 +1,7 @@
 FROM ghcr.io/jonghwanhyeon/cuda:10.1-python3.8
 
-LABEL maintainer="hyeon0145@gmail.com"
+LABEL maintainer="hyeon0145@gmail.com" \
+      org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 ENV LANG=C.UTF-8
 ENV SHELL=/bin/bash
