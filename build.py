@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
+import json
 import os
 import subprocess
+import sys
 
 from contextlib import contextmanager
 
@@ -12,29 +14,26 @@ def change_directory(directory):
 
     os.chdir(directory)
     yield
-
     os.chdir(original)
 
 
-def build(directory, tags):
+def build(directory, tags, options):
     with change_directory(directory):
         subprocess.run([
-            'docker', 'build', '--no-cache', *(f'--tag={tag}' for tag in tags), '.'], check=True)
-    
+            'docker', 'build', 
+                *options,
+                *[f'--tag={tag}' for tag in tags], 
+                '.'], check=True)
+
     for tag in tags:
         subprocess.run(['docker', 'push', tag], check=True)
 
 
 if __name__ == '__main__':
-    build('cuda/10.1/python/3.7', [
-        'ghcr.io/jonghwanhyeon/cuda:python3.7', 'jonghwanhyeon/cuda:python3.7'])
-    build('cuda/10.1/python/3.8', [
-        'ghcr.io/jonghwanhyeon/cuda:python3.8', 'jonghwanhyeon/cuda:python3.8'])
-    build('cuda/10.1/python/3.9', [
-        'ghcr.io/jonghwanhyeon/cuda:python3.9', 'jonghwanhyeon/cuda:python3.9', 
-        'ghcr.io/jonghwanhyeon/cuda:python3', 'jonghwanhyeon/cuda:python3'])
+    build_options = sys.argv[1:]
+
+    with open('config.json', 'r', encoding='utf-8') as input_file:
+        config = json.load(input_file)
     
-    build('ml/', ['ghcr.io/jonghwanhyeon/ml', 'jonghwanhyeon/ml'])
-    build('jupyter/', ['ghcr.io/jonghwanhyeon/jupyter', 'jonghwanhyeon/jupyter'])
-    build('jupyterlab/', ['ghcr.io/jonghwanhyeon/jupyterlab', 'jonghwanhyeon/jupyterlab'])
-    build('code-server/', ['ghcr.io/jonghwanhyeon/code-server', 'jonghwanhyeon/code-server'])
+    for item in config['builds']:
+        build(item['dockerfile'], item['tags'], build_options)

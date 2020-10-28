@@ -1,0 +1,55 @@
+{
+  "builds": [
+    {
+      "dockerfile": "cuda/10.1/python/3.7/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/cuda:10.1-python3.7",
+        "jonghwanhyeon/cuda:10.1-python3.7"
+      ]
+    },
+    {
+      "dockerfile": "cuda/10.1/python/3.8/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/cuda:10.1-python3.8",
+        "jonghwanhyeon/cuda:10.1-python3.8",
+        "ghcr.io/jonghwanhyeon/cuda:10.1-python3",
+        "jonghwanhyeon/cuda:10.1-python3"
+      ]
+    },
+    {
+      "dockerfile": "cuda/10.1/python/3.9/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/cuda:10.1-python3.9",
+        "jonghwanhyeon/cuda:10.1-python3.9"
+      ]
+    },
+    {
+      "dockerfile": "ml/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml",
+        "jonghwanhyeon/ml"
+      ]
+    },
+    {
+      "dockerfile": "jupyter/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/jupyter",
+        "jonghwanhyeon/jupyter"
+      ]
+    },
+    {
+      "dockerfile": "jupyterlab/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/jupyterlab",
+        "jonghwanhyeon/jupyterlab"
+      ]
+    },
+    {
+      "dockerfile": "code-server/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/code-server",
+        "jonghwanhyeon/code-server"
+      ]
+    }
+  ]
+}
