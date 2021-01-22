@@ -7,8 +7,8 @@ RUN pip3 install --no-cache-dir jupyter
 
 COPY jupyter_notebook_config.py /root/.jupyter/
 
-VOLUME /notebooks
-WORKDIR /notebooks
+VOLUME /workspace
+WORKDIR /workspace
 
 # Jupyter
 EXPOSE 80
