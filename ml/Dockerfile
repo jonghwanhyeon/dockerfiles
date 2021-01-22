@@ -39,4 +39,5 @@ RUN pip3 install --no-cache-dir --find-links=https://download.pytorch.org/whl/to
         torchaudio==0.7.2
 
 RUN pip3 install \
-        pytorch-ignite
+        pytorch-ignite \
+        pytorch-lightning
