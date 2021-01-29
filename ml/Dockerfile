@@ -1,4 +1,4 @@
-FROM ghcr.io/jonghwanhyeon/cuda:10.1-python3.8
+FROM ghcr.io/jonghwanhyeon/cuda:11.0-python3.8
 
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
@@ -34,8 +34,8 @@ RUN pip3 install --no-cache-dir \
         tqdm
 
 RUN pip3 install --no-cache-dir --find-links=https://download.pytorch.org/whl/torch_stable.html \
-        torch==1.7.1+cu101 \
-        torchvision==0.8.2+cu101 \
+        torch==1.7.1+cu110 \
+        torchvision==0.8.2+cu110 \
         torchaudio==0.7.2
 
 RUN pip3 install \
