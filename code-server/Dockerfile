@@ -5,6 +5,15 @@ LABEL maintainer="hyeon0145@gmail.com" \
 
 RUN curl -fsSL https://code-server.dev/install.sh | sh
 
+# Fix Python extension
+RUN mkdir -p ~/.local/share/code-server/User \
+    && echo "{\"extensions.autoCheckUpdates\": false," \
+             "\"extensions.autoUpdate\": false}" > ~/.local/share/code-server/User/settings.json \
+    && wget --quiet https://github.com/microsoft/vscode-python/releases/download/2020.10.332292344/ms-python-release.vsix \
+    && code-server --install-extension ms-python-release.vsix || true \
+    && rm ms-python-release.vsix \
+    && rm ~/.config/code-server/config.yaml # Reset password
+
 VOLUME /workspace
 WORKDIR /workspace
 
