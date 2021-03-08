@@ -8,7 +8,7 @@ RUN pip3 install --no-cache-dir jupyterlab
 
 # for JupyterLab extensions
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs && rm -rf /var/lib/apt/lists/*
+RUN apt-get install --yes nodejs && rm -rf /var/lib/apt/lists/*
 
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
 
