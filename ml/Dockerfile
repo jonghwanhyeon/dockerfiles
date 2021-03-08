@@ -4,6 +4,7 @@ LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 ENV LANG=C.UTF-8
+ENV TZ=Asia/Seoul
 ENV SHELL=/bin/bash
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
