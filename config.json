@@ -43,6 +43,13 @@
         "ghcr.io/jonghwanhyeon/code-server",
         "jonghwanhyeon/code-server"
       ]
+    },
+    {
+      "dockerfile": "openssh-server/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/openssh-server",
+        "jonghwanhyeon/openssh-server"
+      ]
     }
   ]
 }
