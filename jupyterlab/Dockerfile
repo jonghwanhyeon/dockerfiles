@@ -6,7 +6,7 @@ LABEL maintainer="hyeon0145@gmail.com" \
 RUN pip3 install --no-cache-dir jupyterlab
 
 # for JupyterLab extensions
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         nodejs \
     && rm -rf /var/lib/apt/lists/*
