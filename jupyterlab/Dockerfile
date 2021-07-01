@@ -13,9 +13,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends
 
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
 
-RUN jupyter labextension install jupyterlab-plotly --no-build
-RUN jupyter labextension install plotlywidget --no-build
-
 RUN NODE_OPTIONS=--max-old-space-size=4096 jupyter lab build
 
 COPY plugin.jupyterlab-settings /root/.jupyter/lab/user-settings/@jupyterlab/extensionmanager-extension/plugin.jupyterlab-settings
