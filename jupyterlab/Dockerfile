@@ -3,7 +3,6 @@ FROM ghcr.io/jonghwanhyeon/jupyter:latest
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
-RUN pip3 install --no-cache-dir xeus-python
 RUN pip3 install --no-cache-dir jupyterlab
 
 # for JupyterLab extensions
@@ -13,8 +12,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends
     && rm -rf /var/lib/apt/lists/*
 
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
-
-RUN jupyter labextension install @jupyterlab/debugger --no-build
 
 RUN jupyter labextension install jupyterlab-plotly --no-build
 RUN jupyter labextension install plotlywidget --no-build
