@@ -14,6 +14,7 @@ RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         curl \
         git \
+        libgl1-mesa-glx \ 
         wget \
     && rm -rf /var/lib/apt/lists/*
 
