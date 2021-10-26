@@ -4,7 +4,7 @@ FROM nvidia/cuda:11.2.2-cudnn8-devel-ubuntu20.04
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
-ENV PYTHON_VERSION 3.9.6
+ENV PYTHON_VERSION 3.9.7
 
 ENV LANG=C.UTF-8
 RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
