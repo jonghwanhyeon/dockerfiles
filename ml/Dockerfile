@@ -37,9 +37,9 @@ RUN pip3 install --no-cache-dir \
         tqdm
 
 RUN pip3 install --no-cache-dir --find-links=https://download.pytorch.org/whl/torch_stable.html \
-        torch==1.9.0+cu111 \
-        torchvision==0.10.0+cu111 \
-        torchaudio==0.9.0
+        torch==1.10.0+cu111 \
+        torchvision==0.11.1+cu111 \
+        torchaudio==0.10.0+cu111
 
 RUN pip3 install \
         pytorch-lightning

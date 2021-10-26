@@ -33,6 +33,13 @@
       ]
     },
     {
+      "dockerfile": "cuda/11.3/python/3.9/",
+      "tags": [
+        "ghcr.io/jonghwanhyeon/cuda:11.3-python3.9",
+        "jonghwanhyeon/cuda:11.3-python3.9"
+      ]
+    },
+    {
       "dockerfile": "ml/",
       "tags": [
         "ghcr.io/jonghwanhyeon/ml",
