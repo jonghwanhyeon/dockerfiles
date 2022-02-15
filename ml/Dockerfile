@@ -24,7 +24,6 @@ RUN pip3 install --no-cache-dir --upgrade \
         wheel
 
 RUN pip3 install --no-cache-dir \
-        altair \
         matplotlib \
         numpy \
         pandas \
