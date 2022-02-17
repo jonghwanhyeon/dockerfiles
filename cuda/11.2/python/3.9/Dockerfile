@@ -1,4 +1,3 @@
-
 FROM nvidia/cuda:11.2.2-cudnn8-devel-ubuntu20.04
 
 LABEL maintainer="hyeon0145@gmail.com" \
