@@ -9,12 +9,12 @@ ENV SHELL=/bin/bash
 
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 
-RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
+RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         curl \
         git \
-        libgl1-mesa-glx \ 
+        libgl1-mesa-glx \
         wget \
     && rm -rf /var/lib/apt/lists/*
 
@@ -23,22 +23,18 @@ RUN pip3 install --no-cache-dir --upgrade \
         setuptools \
         wheel
 
-RUN pip3 install --no-cache-dir \
+RUN pip3 install --no-cache-dir --find-links=https://download.pytorch.org/whl/torch_stable.html \
         matplotlib \
         numpy \
         pandas \
         plotly \
+        pytorch-lightning \
         scikit-learn \
         scipy \
         seaborn \
         streamlit \
         tensorflow \
-        tqdm
-
-RUN pip3 install --no-cache-dir --find-links=https://download.pytorch.org/whl/torch_stable.html \
         torch==1.10.2+cu111 \
+        torchaudio==0.10.2+cu111 \
         torchvision==0.11.3+cu111 \
-        torchaudio==0.10.2+cu111
-
-RUN pip3 install \
-        pytorch-lightning
+        tqdm
