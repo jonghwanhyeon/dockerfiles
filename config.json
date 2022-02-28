@@ -61,20 +61,6 @@
       ]
     },
     {
-      "dockerfile": "ml/pytorch/",
-      "tags": [
-        "ghcr.io/jonghwanhyeon/ml:pytorch",
-        "jonghwanhyeon/ml:pytorch"
-      ]
-    },
-    {
-      "dockerfile": "ml/tensorflow/",
-      "tags": [
-        "ghcr.io/jonghwanhyeon/ml:tensorflow",
-        "jonghwanhyeon/ml:tensorflow"
-      ]
-    },
-    {
       "dockerfile": "jupyter/",
       "tags": [
         "ghcr.io/jonghwanhyeon/jupyter",
