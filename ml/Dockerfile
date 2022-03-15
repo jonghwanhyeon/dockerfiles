@@ -1,4 +1,4 @@
-FROM jonghwanhyeon/cuda:11.2-python3.9
+FROM ghcr.io/jonghwanhyeon/cuda:11.2-python3.9
 
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
