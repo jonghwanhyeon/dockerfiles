@@ -2,11 +2,11 @@
 
 import json
 import os
-from pathlib import Path
 import subprocess
 import sys
-
 from contextlib import contextmanager
+from pathlib import Path
+from typing import Dict, List
 
 
 @contextmanager
@@ -18,7 +18,7 @@ def change_directory(path: Path):
     os.chdir(original)
 
 
-def build(path, arguments, tags, options):
+def build(path: Path, arguments: Dict[str, str], tags: List[str], options: List[str]):
     with change_directory(path):
         command = ['docker', 'build']
         command += options
