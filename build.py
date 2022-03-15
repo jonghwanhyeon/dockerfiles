@@ -2,6 +2,7 @@
 
 import json
 import os
+from pathlib import Path
 import subprocess
 import sys
 
@@ -9,16 +10,16 @@ from contextlib import contextmanager
 
 
 @contextmanager
-def change_directory(directory):
-    original = os.path.abspath(os.getcwd())
+def change_directory(path: Path):
+    original = Path.cwd().resolve()
 
-    os.chdir(directory)
+    os.chdir(path)
     yield
     os.chdir(original)
 
 
-def build(directory, arguments, tags, options):
-    with change_directory(directory):
+def build(path, arguments, tags, options):
+    with change_directory(path):
         command = ['docker', 'build']
         command += options
 
@@ -42,4 +43,7 @@ if __name__ == '__main__':
         config = json.load(input_file)
 
     for item in config['builds']:
-        build(item['dockerfile'], item.get('arguments', {}), item['tags'], build_options)
+        build(path=Path(item['dockerfile']),
+              arguments=item.get('arguments', {}),
+              tags=item['tags'],
+              options=build_options)
