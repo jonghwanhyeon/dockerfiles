@@ -3,11 +3,30 @@
 import json
 import subprocess
 import sys
+import time
 from collections import OrderedDict
 from pathlib import Path
 from typing import Dict, List
 
 
+def retry(number_of_attempts):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for attempt in range(1, number_of_attempts + 1):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as exception:
+                    if attempt >= number_of_attempts:
+                        raise exception
+
+                    print('An error occurred:', exception)
+                    print('Retry after 15 seconds...')
+                    time.sleep(15)
+
+        return wrapper
+    return decorator
+
+@retry(number_of_attempts=3)
 def build(dockerfile_path: Path,
           arguments: Dict[str, str],
           tags: List[str],
