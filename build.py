@@ -17,13 +17,19 @@ def change_directory(directory):
     os.chdir(original)
 
 
-def build(directory, tags, options):
+def build(directory, arguments, tags, options):
     with change_directory(directory):
-        subprocess.run([
-            'docker', 'build', 
-                *options,
-                *[f'--tag={tag}' for tag in tags], 
-                '.'], check=True)
+        command = ['docker', 'build']
+        command += options
+
+        for key, value in arguments.items():
+            command.append('--build-arg')
+            command.append(f'{key}={value}')
+
+        command += [f'--tag={tag}' for tag in tags]
+        command += ['.']
+
+        subprocess.run(command, check=True)
 
     for tag in tags:
         subprocess.run(['docker', 'push', tag], check=True)
@@ -34,6 +40,6 @@ if __name__ == '__main__':
 
     with open('config.json', 'r', encoding='utf-8') as input_file:
         config = json.load(input_file)
-    
+
     for item in config['builds']:
-        build(item['dockerfile'], item['tags'], build_options)
+        build(item['dockerfile'], item.get('arguments', {}), item['tags'], build_options)

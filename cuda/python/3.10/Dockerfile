@@ -1,4 +1,5 @@
-FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
+ARG CUDA_VERSION
+FROM nvidia/cuda:${CUDA_VERSION}-cudnn8-devel-ubuntu20.04
 
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"

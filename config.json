@@ -1,28 +1,40 @@
 {
   "builds": [
     {
-      "dockerfile": "cuda/11.2/python/3.9/",
+      "dockerfile": "cuda/python/3.9/",
+      "arguments": {
+        "CUDA_VERSION": "11.2.2"
+      },
       "tags": [
         "ghcr.io/jonghwanhyeon/cuda:11.2-python3.9",
         "jonghwanhyeon/cuda:11.2-python3.9"
       ]
     },
     {
-      "dockerfile": "cuda/11.2/python/3.10/",
+      "dockerfile": "cuda/python/3.10/",
+      "arguments": {
+        "CUDA_VERSION": "11.3.1"
+      },
       "tags": [
         "ghcr.io/jonghwanhyeon/cuda:11.2-python3.10",
         "jonghwanhyeon/cuda:11.2-python3.10"
       ]
     },
     {
-      "dockerfile": "cuda/11.3/python/3.9/",
+      "dockerfile": "cuda/python/3.9/",
+      "arguments": {
+        "CUDA_VERSION": "11.2.2"
+      },
       "tags": [
         "ghcr.io/jonghwanhyeon/cuda:11.3-python3.9",
         "jonghwanhyeon/cuda:11.3-python3.9"
       ]
     },
     {
-      "dockerfile": "cuda/11.3/python/3.10/",
+      "dockerfile": "cuda/python/3.10/",
+      "arguments": {
+        "CUDA_VERSION": "11.3.1"
+      },
       "tags": [
         "ghcr.io/jonghwanhyeon/cuda:11.3-python3.10",
         "jonghwanhyeon/cuda:11.3-python3.10"
