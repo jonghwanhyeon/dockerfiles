@@ -3,6 +3,7 @@
 import json
 import subprocess
 import sys
+from collections import OrderedDict
 from pathlib import Path
 from typing import Dict, List
 
@@ -39,3 +40,16 @@ if __name__ == '__main__':
               arguments=item.get('arguments', {}),
               tags=item['tags'],
               options=build_options)
+
+    tags_by_dockerfile = OrderedDict()
+    for item in config['builds']:
+        tags_by_dockerfile.setdefault(item['dockerfile'], []).extend(item['tags'])
+
+    with open('README.md', 'w', encoding='utf-8') as output_file:
+        print('# Dockerfiles', file=output_file)
+
+        for dockerfile, tags in tags_by_dockerfile.items():
+            print(f'## {dockerfile}', file=output_file)
+            for tag in tags:
+                print(f'- `{tag}`', file=output_file)
+            print(file=output_file)
