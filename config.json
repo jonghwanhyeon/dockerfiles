@@ -41,24 +41,80 @@
       ]
     },
     {
-      "dockerfile": "ml/Dockerfile",
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.2",
+        "PYTHON_VERSION": "3.9"
+      },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml",
-        "jonghwanhyeon/ml"
+        "ghcr.io/jonghwanhyeon/ml:base-cuda11.2-python3.9",
+        "jonghwanhyeon/ml:base-cuda11.2-python3.9"
       ]
     },
     {
-      "dockerfile": "ml/pytorch/Dockerfile",
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.2",
+        "PYTHON_VERSION": "3.10"
+      },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:pytorch",
-        "jonghwanhyeon/ml:pytorch"
+        "ghcr.io/jonghwanhyeon/ml:base-cuda11.2-python3.10",
+        "jonghwanhyeon/ml:base-cuda11.2-python3.10"
       ]
     },
     {
-      "dockerfile": "ml/tensorflow/Dockerfile",
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.3",
+        "PYTHON_VERSION": "3.9"
+      },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:tensorflow",
-        "jonghwanhyeon/ml:tensorflow"
+        "ghcr.io/jonghwanhyeon/ml:base-cuda11.3-python3.9",
+        "jonghwanhyeon/ml:base-cuda11.3-python3.9"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.3",
+        "PYTHON_VERSION": "3.10"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:base-cuda11.3-python3.10",
+        "jonghwanhyeon/ml:base-cuda11.3-python3.10"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.3",
+        "PYTHON_VERSION": "3.10"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.10",
+        "jonghwanhyeon/ml:torch-cuda11.3-python3.10"
+      ]
+    },
+    {
+      "dockerfile": "ml/tensorflow.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.2",
+        "PYTHON_VERSION": "3.10"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:tensorflow-cuda11.2-python3.10",
+        "jonghwanhyeon/ml:tensorflow-cuda11.2-python3.10"
+      ]
+    },
+    {
+      "dockerfile": "ml/all.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.2",
+        "PYTHON_VERSION": "3.9"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10",
+        "jonghwanhyeon/ml:cuda11.2-python3.10"
       ]
     },
     {
