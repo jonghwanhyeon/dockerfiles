@@ -7,7 +7,7 @@ LABEL maintainer="hyeon0145@gmail.com" \
 ENV PYTHON_VERSION 3.9.10
 
 ENV LANG=C.UTF-8
-RUN sed -i "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
+RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         dpkg-dev \
