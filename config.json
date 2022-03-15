@@ -1,13 +1,6 @@
 {
   "builds": [
     {
-      "dockerfile": "cuda/11.1/python/3.9/",
-      "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.1-python3.9",
-        "jonghwanhyeon/cuda:11.1-python3.9"
-      ]
-    },
-    {
       "dockerfile": "cuda/11.2/python/3.9/",
       "tags": [
         "ghcr.io/jonghwanhyeon/cuda:11.2-python3.9",
