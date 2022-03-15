@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "dockerfile": "cuda/python/3.9/",
+      "dockerfile": "cuda/python/3.9/Dockerfile",
       "arguments": {
         "CUDA_VERSION": "11.2.2"
       },
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "dockerfile": "cuda/python/3.10/",
+      "dockerfile": "cuda/python/3.10/Dockerfile",
       "arguments": {
         "CUDA_VERSION": "11.3.1"
       },
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "dockerfile": "cuda/python/3.9/",
+      "dockerfile": "cuda/python/3.9/Dockerfile",
       "arguments": {
         "CUDA_VERSION": "11.2.2"
       },
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "dockerfile": "cuda/python/3.10/",
+      "dockerfile": "cuda/python/3.10/Dockerfile",
       "arguments": {
         "CUDA_VERSION": "11.3.1"
       },
@@ -41,49 +41,49 @@
       ]
     },
     {
-      "dockerfile": "ml/",
+      "dockerfile": "ml/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/ml",
         "jonghwanhyeon/ml"
       ]
     },
     {
-      "dockerfile": "ml/pytorch/",
+      "dockerfile": "ml/pytorch/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:pytorch",
         "jonghwanhyeon/ml:pytorch"
       ]
     },
     {
-      "dockerfile": "ml/tensorflow/",
+      "dockerfile": "ml/tensorflow/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:tensorflow",
         "jonghwanhyeon/ml:tensorflow"
       ]
     },
     {
-      "dockerfile": "jupyter/",
+      "dockerfile": "jupyter/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/jupyter",
         "jonghwanhyeon/jupyter"
       ]
     },
     {
-      "dockerfile": "jupyterlab/",
+      "dockerfile": "jupyterlab/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/jupyterlab",
         "jonghwanhyeon/jupyterlab"
       ]
     },
     {
-      "dockerfile": "code-server/",
+      "dockerfile": "code-server/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/code-server",
         "jonghwanhyeon/code-server"
       ]
     },
     {
-      "dockerfile": "openssh-server/",
+      "dockerfile": "openssh-server/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/openssh-server",
         "jonghwanhyeon/openssh-server"
