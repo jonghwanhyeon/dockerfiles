@@ -40,6 +40,7 @@ RUN cd /usr/src/python \
         --enable-optimizations \
         --enable-option-checking=fatal \
         --enable-shared \
+        --with-lto \
         --with-system-expat \
         --with-system-ffi \
         --without-ensurepip \
