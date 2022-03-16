@@ -1,6 +1,6 @@
-ARG CUDA_VERSION
-ARG PYTHON_VERSION
-FROM ghcr.io/jonghwanhyeon/ml:base-cuda${CUDA_VERSION}-python${PYTHON_VERSION}
+ARG cuda
+ARG python
+FROM ghcr.io/jonghwanhyeon/ml:base-cuda${cuda}-python${python}
 
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
@@ -8,15 +8,17 @@ LABEL maintainer="hyeon0145@gmail.com" \
 RUN pip3 install --no-cache-dir \
         tensorflow
 
-ARG TORCH_VERSION
-ARG TORCHVISION_VERSION
-ARG TORCHAUDIO_VERSION
+ARG cuda
+ARG python
+ARG torch
+ARG torchvision
+ARG torchaudio
 
 COPY install-torch.py /tmp/install-torch.py
 RUN python3 /tmp/install-torch.py \
-        --cuda=${CUDA_VERSION} \
-        --python=${PYTHON_VERSION} \
-        --torch=${TORCH_VERSION} \
-        --torchaudio=${TORCHAUDIO_VERSION} \
-        --torchvision=${TORCHVISION_VERSION} \
+        --cuda=${cuda} \
+        --python=${python} \
+        --torch=${torch} \
+        --torchaudio=${torchaudio} \
+        --torchvision=${torchvision} \
     && rm /tmp/install-torch.py

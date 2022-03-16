@@ -1,6 +1,6 @@
-ARG CUDA_VERSION
-ARG PYTHON_VERSION
-FROM ghcr.io/jonghwanhyeon/ml:base-cuda${CUDA_VERSION}-python${PYTHON_VERSION}
+ARG cuda
+ARG python
+FROM ghcr.io/jonghwanhyeon/ml:base-cuda${cuda}-python${python}
 
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
