@@ -80,8 +80,8 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:base-cuda11.3-python3.10",
-        "jonghwanhyeon/ml:base-cuda11.3-python3.10"
+        "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.10",
+        "jonghwanhyeon/ml:torch-cuda11.3-python3.10"
       ]
     },
     {
