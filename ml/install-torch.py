@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     subprocess.run([
         'pip3', 'install', '--no-cache-dir', f'--find-links={pytorch_index_url}',
-            f'torch<={arguments.torch}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}',
-            f'torchvision<={arguments.torchvision}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}',
-            f'torchaudio<={arguments.torchaudio}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}'],
+            f'torch=={arguments.torch}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}',
+            f'torchvision=={arguments.torchvision}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}',
+            f'torchaudio=={arguments.torchaudio}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}'],
         check=True)
