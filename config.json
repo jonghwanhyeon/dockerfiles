@@ -47,8 +47,8 @@
         "python": "3.9"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:base-cuda11.2-python3.9",
-        "jonghwanhyeon/ml:base-cuda11.2-python3.9"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-base",
+        "jonghwanhyeon/ml:cuda11.2-python3.9-base"
       ]
     },
     {
@@ -58,8 +58,8 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:base-cuda11.2-python3.10",
-        "jonghwanhyeon/ml:base-cuda11.2-python3.10"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-base",
+        "jonghwanhyeon/ml:cuda11.2-python3.10-base"
       ]
     },
     {
@@ -69,8 +69,8 @@
         "python": "3.9"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:base-cuda11.3-python3.9",
-        "jonghwanhyeon/ml:base-cuda11.3-python3.9"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-base",
+        "jonghwanhyeon/ml:cuda11.3-python3.9-base"
       ]
     },
     {
@@ -80,8 +80,8 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.10",
-        "jonghwanhyeon/ml:torch-cuda11.3-python3.10"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-base",
+        "jonghwanhyeon/ml:cuda11.3-python3.10-base"
       ]
     },
     {
@@ -94,8 +94,8 @@
         "torchaudio": "0.10.2"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:torch1.10-cuda11.3-python3.9",
-        "jonghwanhyeon/ml:torch1.10-cuda11.3-python3.9"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10",
+        "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10"
       ]
     },
     {
@@ -108,10 +108,10 @@
         "torchaudio": "0.11.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:torch1.11-cuda11.3-python3.9",
-        "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.9",
-        "jonghwanhyeon/ml:torch1.11-cuda11.3-python3.9",
-        "jonghwanhyeon/ml:torch-cuda11.3-python3.9"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11",
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch",
+        "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11",
+        "jonghwanhyeon/ml:cuda11.3-python3.9-torch"
       ]
     },
     {
@@ -124,10 +124,10 @@
         "torchaudio": "0.11.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:torch1.11-cuda11.3-python3.10",
-        "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.10",
-        "jonghwanhyeon/ml:torch1.11-cuda11.3-python3.10",
-        "jonghwanhyeon/ml:torch-cuda11.3-python3.10"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11",
+        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch",
+        "jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11",
+        "jonghwanhyeon/ml:cuda11.3-python3.10-torch"
       ]
     },
     {
@@ -137,8 +137,8 @@
         "python": "3.9"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:tensorflow-cuda11.2-python3.9",
-        "jonghwanhyeon/ml:tensorflow-cuda11.2-python3.9"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow",
+        "jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow"
       ]
     },
     {
@@ -148,8 +148,8 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:tensorflow-cuda11.2-python3.10",
-        "jonghwanhyeon/ml:tensorflow-cuda11.2-python3.10"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow",
+        "jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow"
       ]
     },
     {
