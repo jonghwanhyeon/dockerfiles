@@ -8,9 +8,9 @@ LABEL maintainer="hyeon0145@gmail.com" \
 RUN pip3 install --no-cache-dir \
         tensorflow
 
-ARG TORCH_VERSION=1.11.0
-ARG TORCHVISION_VERSION=0.12.0
-ARG TORCHAUDIO_VERSION=0.11.0
+ARG TORCH_VERSION
+ARG TORCHVISION_VERSION
+ARG TORCHAUDIO_VERSION
 
 COPY install-torch.py /tmp/install-torch.py
 RUN python3 /tmp/install-torch.py \

@@ -5,9 +5,9 @@ FROM ghcr.io/jonghwanhyeon/ml:base-cuda${CUDA_VERSION}-python${PYTHON_VERSION}
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
-ARG TORCH_VERSION=1.11.0
-ARG TORCHVISION_VERSION=0.12.0
-ARG TORCHAUDIO_VERSION=0.11.0
+ARG TORCH_VERSION
+ARG TORCHVISION_VERSION
+ARG TORCHAUDIO_VERSION
 
 COPY install-torch.py /tmp/install-torch.py
 RUN python3 /tmp/install-torch.py \
