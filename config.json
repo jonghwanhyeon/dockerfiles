@@ -147,7 +147,9 @@
       },
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10",
-        "jonghwanhyeon/ml:cuda11.2-python3.10"
+        "ghcr.io/jonghwanhyeon/ml",
+        "jonghwanhyeon/ml:cuda11.2-python3.10",
+        "jonghwanhyeon/ml"
       ]
     },
     {
