@@ -1,51 +1,63 @@
 # Dockerfiles
-## cuda/python/3.9/Dockerfile
+## cuda/python/3.9
 - `ghcr.io/jonghwanhyeon/cuda:11.2-python3.9`
 - `jonghwanhyeon/cuda:11.2-python3.9`
 - `ghcr.io/jonghwanhyeon/cuda:11.3-python3.9`
 - `jonghwanhyeon/cuda:11.3-python3.9`
 
-## cuda/python/3.10/Dockerfile
+## cuda/python/3.10
 - `ghcr.io/jonghwanhyeon/cuda:11.2-python3.10`
 - `jonghwanhyeon/cuda:11.2-python3.10`
 - `ghcr.io/jonghwanhyeon/cuda:11.3-python3.10`
 - `jonghwanhyeon/cuda:11.3-python3.10`
 
-## ml/base.Dockerfile
-- `ghcr.io/jonghwanhyeon/ml:base-cuda11.2-python3.9`
-- `jonghwanhyeon/ml:base-cuda11.2-python3.9`
-- `ghcr.io/jonghwanhyeon/ml:base-cuda11.2-python3.10`
-- `jonghwanhyeon/ml:base-cuda11.2-python3.10`
-- `ghcr.io/jonghwanhyeon/ml:base-cuda11.3-python3.9`
-- `jonghwanhyeon/ml:base-cuda11.3-python3.9`
-- `ghcr.io/jonghwanhyeon/ml:base-cuda11.3-python3.10`
-- `jonghwanhyeon/ml:base-cuda11.3-python3.10`
+## ml/base
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-base`
+- `jonghwanhyeon/ml:cuda11.2-python3.9-base`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-base`
+- `jonghwanhyeon/ml:cuda11.2-python3.10-base`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-base`
+- `jonghwanhyeon/ml:cuda11.3-python3.9-base`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-base`
+- `jonghwanhyeon/ml:cuda11.3-python3.10-base`
 
-## ml/torch.Dockerfile
-- `ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.10`
-- `jonghwanhyeon/ml:torch-cuda11.3-python3.10`
+## ml/torch
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10`
+- `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch`
+- `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11`
+- `jonghwanhyeon/ml:cuda11.3-python3.9-torch`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch`
+- `jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11`
+- `jonghwanhyeon/ml:cuda11.3-python3.10-torch`
 
-## ml/tensorflow.Dockerfile
-- `ghcr.io/jonghwanhyeon/ml:tensorflow-cuda11.2-python3.10`
-- `jonghwanhyeon/ml:tensorflow-cuda11.2-python3.10`
+## ml/tensorflow
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow`
+- `jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow`
+- `jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow`
 
-## ml/all.Dockerfile
-- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10`
-- `jonghwanhyeon/ml:cuda11.2-python3.10`
+## ml/all
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9`
+- `ghcr.io/jonghwanhyeon/ml`
+- `jonghwanhyeon/ml:cuda11.2-python3.9`
+- `jonghwanhyeon/ml`
 
-## jupyter/Dockerfile
+## jupyter
 - `ghcr.io/jonghwanhyeon/jupyter`
 - `jonghwanhyeon/jupyter`
 
-## jupyterlab/Dockerfile
+## jupyterlab
 - `ghcr.io/jonghwanhyeon/jupyterlab`
 - `jonghwanhyeon/jupyterlab`
 
-## code-server/Dockerfile
+## code-server
 - `ghcr.io/jonghwanhyeon/code-server`
 - `jonghwanhyeon/code-server`
 
-## openssh-server/Dockerfile
+## openssh-server
 - `ghcr.io/jonghwanhyeon/openssh-server`
 - `jonghwanhyeon/openssh-server`
 
