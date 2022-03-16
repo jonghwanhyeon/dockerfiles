@@ -89,9 +89,9 @@
       "arguments": {
         "cuda": "11.3",
         "python": "3.9",
-        "torch": "1.10.0",
-        "torchvision": "0.11.0",
-        "torchaudio": "0.10.0"
+        "torch": "1.10.2",
+        "torchvision": "0.11.3",
+        "torchaudio": "0.10.2"
       },
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:torch1.10-cuda11.3-python3.9",
@@ -157,9 +157,9 @@
       "arguments": {
         "cuda": "11.2",
         "python": "3.9",
-        "torch": "1.10.0",
-        "torchvision": "0.11.0",
-        "torchaudio": "0.10.0"
+        "torch": "1.10.2",
+        "torchvision": "0.11.3",
+        "torchaudio": "0.10.2"
       },
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9",
