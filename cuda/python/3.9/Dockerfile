@@ -9,26 +9,22 @@ ENV PYTHON_VERSION=3.9.10
 ENV LANG=C.UTF-8
 RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 
+# Refer to https://devguide.python.org/setup/#linux
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
-        dpkg-dev \
-        gcc \
-        libbluetooth-dev \
+        build-essential \
         libbz2-dev \
-        libc6-dev \
-        libexpat1-dev \
         libffi-dev \
         libgdbm-compat-dev \
         libgdbm-dev \
         liblzma-dev \
-        libncursesw5-dev \
-        libreadline-dev \
+        libncurses5-dev \
+        libreadline6-dev \
         libsqlite3-dev \
         libssl-dev \
-        make \
+        pkg-config \
         tk-dev \
         uuid-dev \
         wget \
-        xz-utils \
         zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
