@@ -88,11 +88,33 @@
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
         "CUDA_VERSION": "11.3",
+        "PYTHON_VERSION": "3.9"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.9",
+        "jonghwanhyeon/ml:torch-cuda11.3-python3.9"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.3",
         "PYTHON_VERSION": "3.10"
       },
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:torch-cuda11.3-python3.10",
         "jonghwanhyeon/ml:torch-cuda11.3-python3.10"
+      ]
+    },
+    {
+      "dockerfile": "ml/tensorflow.Dockerfile",
+      "arguments": {
+        "CUDA_VERSION": "11.2",
+        "PYTHON_VERSION": "3.9"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:tensorflow-cuda11.2-python3.9",
+        "jonghwanhyeon/ml:tensorflow-cuda11.2-python3.9"
       ]
     },
     {
