@@ -44,8 +44,10 @@ def build(dockerfile_path: Path,
 
     subprocess.run(command, check=True)
 
+@retry(number_of_attempts=3)
+def push(tags: List[str]):
     for tag in tags:
-        subprocess.run(['docker', 'push', tag], check=True)
+        subprocess.run(['docker', 'push', tag], check=True, timeout=600)
 
 
 if __name__ == '__main__':
@@ -59,6 +61,7 @@ if __name__ == '__main__':
               arguments=item.get('arguments', {}),
               tags=item['tags'],
               options=build_options)
+        push(tags=item['tags'])
 
     tags_by_dockerfile = OrderedDict()
     for item in config['builds']:
