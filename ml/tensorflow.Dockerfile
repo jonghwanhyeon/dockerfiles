@@ -1,6 +1,6 @@
 ARG cuda
 ARG python
-FROM ghcr.io/jonghwanhyeon/ml:base-cuda${cuda}-python${python}
+FROM ghcr.io/jonghwanhyeon/ml:cuda${cuda}-python${python}-base
 
 LABEL maintainer="hyeon0145@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
