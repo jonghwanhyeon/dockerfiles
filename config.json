@@ -109,9 +109,7 @@
       },
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11",
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch",
-        "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11",
-        "jonghwanhyeon/ml:cuda11.3-python3.9-torch"
+        "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11"
       ]
     },
     {
@@ -125,31 +123,31 @@
       },
       "tags": [
         "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11",
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch",
-        "jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11",
-        "jonghwanhyeon/ml:cuda11.3-python3.10-torch"
+        "jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11"
       ]
     },
     {
       "dockerfile": "ml/tensorflow.Dockerfile",
       "arguments": {
         "cuda": "11.2",
-        "python": "3.9"
+        "python": "3.9",
+        "tensorflow": "2.9.1"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow",
-        "jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9",
+        "jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9"
       ]
     },
     {
       "dockerfile": "ml/tensorflow.Dockerfile",
       "arguments": {
         "cuda": "11.2",
-        "python": "3.10"
+        "python": "3.10",
+        "tensorflow": "2.9.1"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow",
-        "jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow2.9",
+        "jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow2.9"
       ]
     },
     {
@@ -157,15 +155,14 @@
       "arguments": {
         "cuda": "11.2",
         "python": "3.9",
+        "tensorflow": "2.9.1",
         "torch": "1.10.2",
         "torchvision": "0.11.3",
         "torchaudio": "0.10.2"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9",
-        "ghcr.io/jonghwanhyeon/ml",
-        "jonghwanhyeon/ml:cuda11.2-python3.9",
-        "jonghwanhyeon/ml"
+        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9-torch-1.10",
+        "jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9-torch-1.10"
       ]
     },
     {
