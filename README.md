@@ -25,25 +25,23 @@
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10`
 - `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11`
-- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch`
 - `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11`
-- `jonghwanhyeon/ml:cuda11.3-python3.9-torch`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11`
-- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch`
 - `jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11`
-- `jonghwanhyeon/ml:cuda11.3-python3.10-torch`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.12`
+- `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.12`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.12`
+- `jonghwanhyeon/ml:cuda11.3-python3.10-torch1.12`
 
 ## ml/tensorflow
-- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow`
-- `jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow`
-- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow`
-- `jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9`
+- `jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow2.9`
+- `jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow2.9`
 
 ## ml/all
-- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9`
-- `ghcr.io/jonghwanhyeon/ml`
-- `jonghwanhyeon/ml:cuda11.2-python3.9`
-- `jonghwanhyeon/ml`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9-torch-1.10`
+- `jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.9-torch-1.10`
 
 ## jupyter
 - `ghcr.io/jonghwanhyeon/jupyter`
