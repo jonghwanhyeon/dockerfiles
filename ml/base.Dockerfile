@@ -27,6 +27,7 @@ RUN pip3 install --no-cache-dir \
         numpy \
         pandas \
         plotly \
+        rich \
         scikit-learn \
         scipy \
         seaborn \
