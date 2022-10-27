@@ -21,11 +21,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-
         wget \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --no-cache-dir --upgrade \
-        pip \
-        setuptools \
-        wheel
-
 RUN pip3 install --no-cache-dir \
         matplotlib \
         numpy \
