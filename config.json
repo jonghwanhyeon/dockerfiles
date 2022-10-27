@@ -214,13 +214,6 @@
       ]
     },
     {
-      "dockerfile": "jupyter/Dockerfile",
-      "tags": [
-        "ghcr.io/jonghwanhyeon/jupyter",
-        "jonghwanhyeon/jupyter"
-      ]
-    },
-    {
       "dockerfile": "jupyterlab/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/jupyterlab",
