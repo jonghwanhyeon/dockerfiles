@@ -22,6 +22,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --no-cache-dir \
+        dask[complete] \
         matplotlib \
         numpy \
         pandas \
