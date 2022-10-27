@@ -30,5 +30,4 @@ RUN pip3 install --no-cache-dir \
         scikit-learn \
         scipy \
         seaborn \
-        streamlit \
         tqdm
