@@ -228,13 +228,6 @@
       ]
     },
     {
-      "dockerfile": "code-server/Dockerfile",
-      "tags": [
-        "ghcr.io/jonghwanhyeon/code-server",
-        "jonghwanhyeon/code-server"
-      ]
-    },
-    {
       "dockerfile": "openssh-server/Dockerfile",
       "tags": [
         "ghcr.io/jonghwanhyeon/openssh-server",
