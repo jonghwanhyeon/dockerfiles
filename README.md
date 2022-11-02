@@ -32,8 +32,6 @@
 - `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11`
 - `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11`
-- `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11`
-- `jonghwanhyeon/ml:cuda11.3-python3.10-torch1.11`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.12`
 - `jonghwanhyeon/ml:cuda11.3-python3.9-torch1.12`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.12`
