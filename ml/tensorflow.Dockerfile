@@ -8,4 +8,4 @@ LABEL maintainer="hyeon0145@gmail.com" \
 ARG tensorflow
 
 RUN pip3 install --no-cache-dir \
-        "tensorflow==${tensorflow}"
+        "tensorflow~=${tensorflow}"

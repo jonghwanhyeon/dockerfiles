@@ -63,9 +63,9 @@ if __name__ == "__main__":
             "install",
             "--no-cache-dir",
             f"--extra-index-url={pytorch_index_url}",
-            f"torch=={arguments.torch}",
-            f"torchvision=={arguments.torchvision}",
-            f"torchaudio=={arguments.torchaudio}",
+            f"torch~={arguments.torch}",
+            f"torchvision~={arguments.torchvision}",
+            f"torchaudio~={arguments.torchaudio}",
         ],
         check=True,
     )
