@@ -15,6 +15,7 @@ ARG python
 ARG torch
 ARG torchvision
 ARG torchaudio
+ARG torchtext
 
 COPY install-torch.py /tmp/install-torch.py
 RUN python3 /tmp/install-torch.py \
@@ -22,4 +23,5 @@ RUN python3 /tmp/install-torch.py \
         --torch=${torch} \
         --torchaudio=${torchaudio} \
         --torchvision=${torchvision} \
+        --torchtext=${torchtext} \
     && rm /tmp/install-torch.py

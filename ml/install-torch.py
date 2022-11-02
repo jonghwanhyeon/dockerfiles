@@ -49,6 +49,7 @@ if __name__ == "__main__":
     parser.add_argument("--torch", required=True)
     parser.add_argument("--torchaudio", required=True)
     parser.add_argument("--torchvision", required=True)
+    parser.add_argument("--torchtext", required=True)
     arguments = parser.parse_args()
 
     cuda_version = version_of(arguments.cuda)
@@ -66,6 +67,7 @@ if __name__ == "__main__":
             f"torch~={arguments.torch}",
             f"torchvision~={arguments.torchvision}",
             f"torchaudio~={arguments.torchaudio}",
+            f"torchtext~={arguments.torchtext}",
         ],
         check=True,
     )
