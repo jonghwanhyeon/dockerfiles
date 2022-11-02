@@ -38,7 +38,6 @@ def resolve_cuda_version(available_cuda_versions: List[Version], current_cuda_ve
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--cuda', required=True)
-    parser.add_argument('--python', required=True)
     parser.add_argument('--torch', required=True)
     parser.add_argument('--torchaudio', required=True)
     parser.add_argument('--torchvision', required=True)

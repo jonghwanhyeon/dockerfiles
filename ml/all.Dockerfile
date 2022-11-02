@@ -19,7 +19,6 @@ ARG torchaudio
 COPY install-torch.py /tmp/install-torch.py
 RUN python3 /tmp/install-torch.py \
         --cuda=${cuda} \
-        --python=${python} \
         --torch=${torch} \
         --torchaudio=${torchaudio} \
         --torchvision=${torchvision} \
