@@ -4,7 +4,8 @@ import subprocess
 import urllib.request
 from typing import List, NamedTuple
 
-pytorch_index_url = "https://download.pytorch.org/whl/torch_stable.html"
+pytorch_stable_index_url = "https://download.pytorch.org/whl/torch_stable.html"
+pytorch_cuda_index_url = "https://download.pytorch.org/whl/cu{major}{minor}"
 
 
 class Version(NamedTuple):
@@ -23,7 +24,7 @@ def fetch(url: str) -> str:
 
 
 def fetch_available_cuda_versions() -> List[Version]:
-    document = fetch(pytorch_index_url)
+    document = fetch(pytorch_stable_index_url)
     versions = set(re.findall(r'href="cu(\d+)(\d)', document))
     return sorted(Version(int(major), int(minor)) for major, minor in versions)
 
@@ -54,15 +55,17 @@ if __name__ == "__main__":
     available_cuda_versions = fetch_available_cuda_versions()
     reolsved_cuda_version = resolve_cuda_version(available_cuda_versions, cuda_version)
 
+    pytorch_index_url = pytorch_cuda_index_url.format(**reolsved_cuda_version._asdict())
+
     subprocess.run(
         [
             "pip3",
             "install",
             "--no-cache-dir",
-            f"--find-links={pytorch_index_url}",
-            f"torch=={arguments.torch}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}",
-            f"torchvision=={arguments.torchvision}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}",
-            f"torchaudio=={arguments.torchaudio}+cu{reolsved_cuda_version.major}{reolsved_cuda_version.minor}",
+            f"--extra-index-url={pytorch_index_url}",
+            f"torch=={arguments.torch}",
+            f"torchvision=={arguments.torchvision}",
+            f"torchaudio=={arguments.torchaudio}",
         ],
         check=True,
     )
