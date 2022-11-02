@@ -1,7 +1,7 @@
 ARG cuda
 FROM nvidia/cuda:${cuda}-cudnn8-devel-ubuntu20.04
 
-LABEL maintainer="hyeon0145@gmail.com" \
+LABEL maintainer="jonghwanhyeon93@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 ENV PYTHON_VERSION=3.10.8

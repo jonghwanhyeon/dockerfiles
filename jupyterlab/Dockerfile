@@ -1,7 +1,7 @@
 ARG tag
 FROM ghcr.io/jonghwanhyeon/ml:${tag}
 
-LABEL maintainer="hyeon0145@gmail.com" \
+LABEL maintainer="jonghwanhyeon93@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 RUN pip3 install --no-cache-dir jupyterlab

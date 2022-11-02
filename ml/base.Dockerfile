@@ -2,7 +2,7 @@ ARG cuda
 ARG python
 FROM ghcr.io/jonghwanhyeon/cuda:${cuda}-python${python}
 
-LABEL maintainer="hyeon0145@gmail.com" \
+LABEL maintainer="jonghwanhyeon93@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
 ENV LANG=C.UTF-8
