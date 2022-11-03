@@ -10,6 +10,7 @@ ENV PYTHON_VERSION=3.10.8
 ENV LANG=C.UTF-8
 RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 
+# Refer to https://devguide.python.org/getting-started/setup-building/#linux
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         build-essential \
         libbz2-dev \
