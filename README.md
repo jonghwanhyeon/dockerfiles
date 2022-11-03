@@ -32,6 +32,10 @@
 - `jonghwanhyeon/ml:cuda11.3-python3.9-base`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-base`
 - `jonghwanhyeon/ml:cuda11.3-python3.10-base`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.9-base`
+- `jonghwanhyeon/ml:cuda11.8-python3.9-base`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10-base`
+- `jonghwanhyeon/ml:cuda11.8-python3.10-base`
 
 ## ml/torch
 - `ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10`
