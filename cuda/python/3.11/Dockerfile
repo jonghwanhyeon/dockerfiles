@@ -1,9 +1,6 @@
 ARG cuda
 ARG ubuntu
-FROM nvidia/cuda:${cuda}-cudnn8-devel-ubuntu${ubuntu}
-
-LABEL maintainer="jonghwanhyeon93@gmail.com" \
-      org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
+FROM ubuntu:${ubuntu} as builder
 
 ENV PYTHON_VERSION=3.11.0
 
@@ -13,6 +10,7 @@ RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/source
 # Refer to https://devguide.python.org/getting-started/setup-building/#linux
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         build-essential \
+        ca-certificates \
         libbz2-dev \
         libffi-dev \
         libgdbm-compat-dev \
@@ -35,7 +33,9 @@ RUN wget -O /tmp/python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSI
     && rm /tmp/python.tar.xz
 
 RUN cd /usr/src/python \
+    && mkdir /env \
     && ./configure \
+        --prefix="/env" \
         --build="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" \
         --enable-loadable-sqlite-extensions \
         --enable-optimizations \
@@ -46,8 +46,38 @@ RUN cd /usr/src/python \
         --without-ensurepip \
     && make -j "$(nproc)" \
     && make install \
-    && ldconfig \
     && rm -rf /usr/src/python
+
+
+FROM nvidia/cuda:${cuda}-cudnn8-devel-ubuntu${ubuntu}
+
+LABEL maintainer="jonghwanhyeon93@gmail.com" \
+      org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
+
+ENV LANG=C.UTF-8
+RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
+
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+        build-essential \
+        ca-certificates \
+        libbz2-dev \
+        libffi-dev \
+        libgdbm-compat-dev \
+        libgdbm-dev \
+        liblzma-dev \
+        libncurses5-dev \
+        libreadline6-dev \
+        libsqlite3-dev \
+        libssl-dev \
+        pkg-config \
+        tk-dev \
+        uuid-dev \
+        wget \
+        zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /env /usr/local
+RUN ldconfig
 
 RUN cd /usr/local/bin \
     && ln -s idle3 idle \
