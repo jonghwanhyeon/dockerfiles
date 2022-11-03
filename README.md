@@ -64,6 +64,8 @@
 ## jupyterlab
 - `ghcr.io/jonghwanhyeon/jupyterlab:cuda11.3-python3.10-torch1.12`
 - `jonghwanhyeon/jupyterlab:cuda11.3-python3.10-torch1.12`
+- `ghcr.io/jonghwanhyeon/jupyterlab:cuda11.8-python3.10-torch1.13`
+- `jonghwanhyeon/jupyterlab:cuda11.8-python3.10-torch1.13`
 - `ghcr.io/jonghwanhyeon/jupyterlab:cuda11.2-python3.9-tensorflow2.9-torch-1.10`
 - `jonghwanhyeon/jupyterlab:cuda11.2-python3.9-tensorflow2.9-torch-1.10`
 
