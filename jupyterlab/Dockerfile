@@ -7,6 +7,11 @@ LABEL maintainer="jonghwanhyeon93@gmail.com" \
 RUN pip3 install --no-cache-dir jupyterlab
 COPY jupyter_lab_config.py /root/.jupyter/
 
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
+    && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+        nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
 VOLUME /workspace
 WORKDIR /workspace
 
