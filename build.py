@@ -73,6 +73,7 @@ def build(
     tags: List[str],
     options: List[str],
 ):
+    print(f"# Building {', '.join(tags)}")
     command = ["docker", "build"]
     command.append(f"--file={dockerfile_path}")
     command.extend(options)
@@ -85,13 +86,14 @@ def build(
     command.append(str(dockerfile_path.parent))
 
     subprocess.run(command, check=True)
-
+    print()
 
 @retry(number_of_attempts=3)
 def push(tags: List[str]):
     for tag in tags:
+        print(f"# Pushing {tag}")
         subprocess.run(["docker", "push", tag], check=True, timeout=600)
-
+        print()
 
 if __name__ == "__main__":
     build_options = sys.argv[1:]
