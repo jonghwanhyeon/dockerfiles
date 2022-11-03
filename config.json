@@ -144,6 +144,28 @@
       ]
     },
     {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "cuda": "11.8",
+        "python": "3.9"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.9-base",
+        "jonghwanhyeon/ml:cuda11.8-python3.9-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "cuda": "11.8",
+        "python": "3.10"
+      },
+      "tags": [
+        "ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10-base",
+        "jonghwanhyeon/ml:cuda11.8-python3.10-base"
+      ]
+    },
+    {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
         "cuda": "11.3",
