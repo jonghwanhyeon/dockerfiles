@@ -1,12 +1,24 @@
 #!/usr/bin/env python3
 
+import argparse
 import json
 import subprocess
-import sys
 import time
 from collections import OrderedDict
 from pathlib import Path
 from typing import Any, Dict, List
+
+
+arguments = None
+
+
+def parse_arugments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("action")
+    parser.add_argument("build_option", nargs="*")
+    parser.add_argument("--registry", action="append")
+
+    return parser.parse_args()
 
 
 def retry(number_of_attempts: int):
@@ -37,6 +49,13 @@ def load_config(filename: str) -> Dict[str, Any]:
 
         if "arguments" not in build:
             build["arguments"] = {}
+
+        if arguments.registry is not None:
+            tags = list(build["tags"])
+            for registry in arguments.registry:
+                for tag in build["tags"]:
+                    tags.append(f"{registry}/{tag}")
+            build["tags"] = tags
 
     return config
 
@@ -88,6 +107,7 @@ def build(
     subprocess.run(command, check=True)
     print()
 
+
 @retry(number_of_attempts=3)
 def push(tags: List[str]):
     for tag in tags:
@@ -95,17 +115,19 @@ def push(tags: List[str]):
         subprocess.run(["docker", "push", tag], check=True, timeout=600)
         print()
 
+
 if __name__ == "__main__":
-    build_options = sys.argv[1:]
-
+    arguments = parse_arugments()
     config = load_config("config.json")
-    generate_readme("README.md", config)
 
-    for item in config["builds"]:
-        build(
-            dockerfile_path=item["dockerfile_path"],
-            arguments=item["arguments"],
-            tags=item["tags"],
-            options=build_options,
-        )
-        push(tags=item["tags"])
+    if arguments.action == "build":
+        for item in config["builds"]:
+            build(
+                dockerfile_path=item["dockerfile_path"],
+                arguments=item["arguments"],
+                tags=item["tags"],
+                options=arguments.build_option,
+            )
+            push(tags=item["tags"])
+    elif arguments.action == "generate":
+        generate_readme("README.md", config)

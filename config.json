@@ -7,7 +7,6 @@
         "ubuntu": "20.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.2-python3.9",
         "jonghwanhyeon/cuda:11.2-python3.9"
       ]
     },
@@ -18,7 +17,6 @@
         "ubuntu": "20.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.2-python3.10",
         "jonghwanhyeon/cuda:11.2-python3.10"
       ]
     },
@@ -29,7 +27,6 @@
         "ubuntu": "20.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.2-python3.11",
         "jonghwanhyeon/cuda:11.2-python3.11"
       ]
     },
@@ -40,7 +37,6 @@
         "ubuntu": "20.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.3-python3.9",
         "jonghwanhyeon/cuda:11.3-python3.9"
       ]
     },
@@ -51,7 +47,6 @@
         "ubuntu": "20.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.3-python3.10",
         "jonghwanhyeon/cuda:11.3-python3.10"
       ]
     },
@@ -62,7 +57,6 @@
         "ubuntu": "20.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.3-python3.11",
         "jonghwanhyeon/cuda:11.3-python3.11"
       ]
     },
@@ -73,7 +67,6 @@
         "ubuntu": "22.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.8-python3.9",
         "jonghwanhyeon/cuda:11.8-python3.9"
       ]
     },
@@ -84,7 +77,6 @@
         "ubuntu": "22.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.8-python3.10",
         "jonghwanhyeon/cuda:11.8-python3.10"
       ]
     },
@@ -95,7 +87,6 @@
         "ubuntu": "22.04"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/cuda:11.8-python3.11",
         "jonghwanhyeon/cuda:11.8-python3.11"
       ]
     },
@@ -106,7 +97,6 @@
         "python": "3.9"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-base",
         "jonghwanhyeon/ml:cuda11.2-python3.9-base"
       ]
     },
@@ -117,7 +107,6 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-base",
         "jonghwanhyeon/ml:cuda11.2-python3.10-base"
       ]
     },
@@ -128,7 +117,6 @@
         "python": "3.9"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-base",
         "jonghwanhyeon/ml:cuda11.3-python3.9-base"
       ]
     },
@@ -139,7 +127,6 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-base",
         "jonghwanhyeon/ml:cuda11.3-python3.10-base"
       ]
     },
@@ -150,7 +137,6 @@
         "python": "3.9"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.9-base",
         "jonghwanhyeon/ml:cuda11.8-python3.9-base"
       ]
     },
@@ -161,7 +147,6 @@
         "python": "3.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10-base",
         "jonghwanhyeon/ml:cuda11.8-python3.10-base"
       ]
     },
@@ -176,7 +161,6 @@
         "torchtext": "0.11.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10",
         "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.10"
       ]
     },
@@ -191,7 +175,6 @@
         "torchtext": "0.12.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11",
         "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.11"
       ]
     },
@@ -206,7 +189,6 @@
         "torchtext": "0.13.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.9-torch1.12",
         "jonghwanhyeon/ml:cuda11.3-python3.9-torch1.12"
       ]
     },
@@ -221,7 +203,6 @@
         "torchtext": "0.13.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.3-python3.10-torch1.12",
         "jonghwanhyeon/ml:cuda11.3-python3.10-torch1.12"
       ]
     },
@@ -236,7 +217,6 @@
         "torchtext": "0.14.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.9-torch1.13",
         "jonghwanhyeon/ml:cuda11.8-python3.9-torch1.13"
       ]
     },
@@ -251,7 +231,6 @@
         "torchtext": "0.14.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10-torch1.13",
         "jonghwanhyeon/ml:cuda11.8-python3.10-torch1.13"
       ]
     },
@@ -263,7 +242,6 @@
         "tensorflow": "2.10.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.10",
         "jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.10"
       ]
     },
@@ -275,7 +253,6 @@
         "tensorflow": "2.10.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow2.10",
         "jonghwanhyeon/ml:cuda11.2-python3.10-tensorflow2.10"
       ]
     },
@@ -291,7 +268,6 @@
         "torchtext": "0.11.0"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.10-torch-1.10",
         "jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.10-torch-1.10"
       ]
     },
@@ -301,7 +277,6 @@
         "tag": "cuda11.3-python3.10-torch1.12"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/jupyterlab:cuda11.3-python3.10-torch1.12",
         "jonghwanhyeon/jupyterlab:cuda11.3-python3.10-torch1.12"
       ]
     },
@@ -311,7 +286,6 @@
         "tag": "cuda11.8-python3.10-torch1.13"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/jupyterlab:cuda11.8-python3.10-torch1.13",
         "jonghwanhyeon/jupyterlab:cuda11.8-python3.10-torch1.13"
       ]
     },
@@ -321,14 +295,12 @@
         "tag": "cuda11.2-python3.9-tensorflow2.9-torch-1.10"
       },
       "tags": [
-        "ghcr.io/jonghwanhyeon/jupyterlab:cuda11.2-python3.9-tensorflow2.9-torch-1.10",
         "jonghwanhyeon/jupyterlab:cuda11.2-python3.9-tensorflow2.9-torch-1.10"
       ]
     },
     {
       "dockerfile": "openssh-server/Dockerfile",
       "tags": [
-        "ghcr.io/jonghwanhyeon/openssh-server",
         "jonghwanhyeon/openssh-server"
       ]
     }
