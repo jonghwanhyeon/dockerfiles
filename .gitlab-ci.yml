@@ -4,6 +4,7 @@ build:
   services:
     - docker:dind
   before_script:
+    - docker login -u "$CI_DOCKER_HUB_REGISTRY_USER" -p "$CI_DOCKER_HUB_REGISTRY_PASSWORD"
     - docker login -u "$CI_GHCR_REGISTRY_USER" -p "$CI_GHCR_REGISTRY_PASSWORD" $CI_GHCR_REGISTRY
     - docker login -u "$CI_PRIVATE_REGISTRY_USER" -p "$CI_PRIVATE_REGISTRY_PASSWORD" $CI_PRIVATE_REGISTRY
   script:
