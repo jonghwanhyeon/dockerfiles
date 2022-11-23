@@ -1,0 +1,18 @@
+name: Mirror
+
+on:
+  - push
+  - delete
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: wangchucheng/git-repo-sync@v0.1.0
+      with:
+        target-url: ${{ secrets.GITLAB_REPOSITORY_URL }}
+        target-username: ${{ secrets.GITLAB_USERNAME }}
+        target-token: ${{ secrets.GITLAB_ACCESS_TOKEN }}
