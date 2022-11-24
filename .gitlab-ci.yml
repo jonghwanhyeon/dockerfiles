@@ -14,3 +14,7 @@ build:
     # Run this job in a branch where a Dockerfile exists
     - exists:
         - build.py
+  except:
+    changes:
+      - "build.py"
+      - "*.md"
