@@ -8,14 +8,13 @@ from collections import OrderedDict
 from pathlib import Path
 from typing import Any, Dict, List
 
-
 arguments = None
 
 
 def parse_arugments():
     parser = argparse.ArgumentParser()
-    parser.add_argument("action")
     parser.add_argument("build_option", nargs="*")
+    parser.add_argument("--skip_build", action="store_true")
     parser.add_argument("--registry", action="append")
 
     return parser.parse_args()
@@ -120,7 +119,7 @@ if __name__ == "__main__":
     arguments = parse_arugments()
     config = load_config("config.json")
 
-    if arguments.action == "build":
+    if not arguments.skip_build:
         for item in config["builds"]:
             build(
                 dockerfile_path=item["dockerfile_path"],
@@ -129,5 +128,5 @@ if __name__ == "__main__":
                 options=arguments.build_option,
             )
             push(tags=item["tags"])
-    elif arguments.action == "generate":
-        generate_readme("README.md", config)
+
+    generate_readme("README.md", config)
