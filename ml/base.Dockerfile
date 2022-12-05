@@ -26,6 +26,7 @@ RUN pip3 install --no-cache-dir \
         numpy \
         pandas \
         plotly \
+        pyarrow \
         rich \
         scikit-learn \
         scipy \
