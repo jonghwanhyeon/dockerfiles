@@ -61,6 +61,10 @@
 - `jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.10-torch-1.10`
 - `ghcr.io/jonghwanhyeon/ml:cuda11.2-python3.9-tensorflow2.10-torch-1.10`
 
+## ml/tasks/speech
+- `jonghwanhyeon/ml:speech`
+- `ghcr.io/jonghwanhyeon/ml:speech`
+
 ## jupyterlab
 - `jonghwanhyeon/jupyterlab:cuda11.3-python3.10-torch1.12`
 - `ghcr.io/jonghwanhyeon/jupyterlab:cuda11.3-python3.10-torch1.12`
