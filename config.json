@@ -272,6 +272,15 @@
       ]
     },
     {
+      "dockerfile": "ml/tasks/speech.Dockerfile",
+      "arguments": {
+        "tag": "cuda11.3-python3.9-torch1.12"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:speech"
+      ]
+    },
+    {
       "dockerfile": "jupyterlab/Dockerfile",
       "arguments": {
         "tag": "cuda11.3-python3.10-torch1.12"
