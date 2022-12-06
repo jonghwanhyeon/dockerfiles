@@ -33,9 +33,7 @@ RUN wget -O /tmp/python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSI
     && rm /tmp/python.tar.xz
 
 RUN cd /usr/src/python \
-    && mkdir /env \
     && ./configure \
-        --prefix="/env" \
         --build="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" \
         --enable-loadable-sqlite-extensions \
         --enable-optimizations \
@@ -76,7 +74,9 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-
         zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /env /usr/local
+COPY --from=builder /usr/local/bin /usr/local/bin
+COPY --from=builder /usr/local/include /usr/local/include
+COPY --from=builder /usr/local/lib /usr/local/lib
 RUN ldconfig
 
 RUN cd /usr/local/bin \
