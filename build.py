@@ -14,7 +14,7 @@ arguments = None
 def parse_arugments():
     parser = argparse.ArgumentParser()
     parser.add_argument("build_option", nargs="*")
-    parser.add_argument("--skip_build", action="store_true")
+    parser.add_argument("--skip-build", action="store_true")
     parser.add_argument("--registry", action="append")
 
     return parser.parse_args()
