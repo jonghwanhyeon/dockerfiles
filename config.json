@@ -63,31 +63,31 @@
     {
       "dockerfile": "cuda/python/3.9/Dockerfile",
       "arguments": {
-        "cuda": "11.8.0",
+        "cuda": "11.7.1",
         "ubuntu": "22.04"
       },
       "tags": [
-        "jonghwanhyeon/cuda:11.8-python3.9"
+        "jonghwanhyeon/cuda:11.7-python3.9"
       ]
     },
     {
       "dockerfile": "cuda/python/3.10/Dockerfile",
       "arguments": {
-        "cuda": "11.8.0",
+        "cuda": "11.7.1",
         "ubuntu": "22.04"
       },
       "tags": [
-        "jonghwanhyeon/cuda:11.8-python3.10"
+        "jonghwanhyeon/cuda:11.7-python3.10"
       ]
     },
     {
       "dockerfile": "cuda/python/3.11/Dockerfile",
       "arguments": {
-        "cuda": "11.8.0",
+        "cuda": "11.7.1",
         "ubuntu": "22.04"
       },
       "tags": [
-        "jonghwanhyeon/cuda:11.8-python3.11"
+        "jonghwanhyeon/cuda:11.7-python3.11"
       ]
     },
     {
@@ -133,21 +133,21 @@
     {
       "dockerfile": "ml/base.Dockerfile",
       "arguments": {
-        "cuda": "11.8",
+        "cuda": "11.7",
         "python": "3.9"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.9-base"
+        "jonghwanhyeon/ml:cuda11.7-python3.9-base"
       ]
     },
     {
       "dockerfile": "ml/base.Dockerfile",
       "arguments": {
-        "cuda": "11.8",
+        "cuda": "11.7",
         "python": "3.10"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.10-base"
+        "jonghwanhyeon/ml:cuda11.7-python3.10-base"
       ]
     },
     {
@@ -209,7 +209,7 @@
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
-        "cuda": "11.8",
+        "cuda": "11.7",
         "python": "3.9",
         "torch": "1.13.0",
         "torchvision": "0.14.0",
@@ -217,13 +217,13 @@
         "torchtext": "0.14.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.9-torch1.13"
+        "jonghwanhyeon/ml:cuda11.7-python3.9-torch1.13"
       ]
     },
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
-        "cuda": "11.8",
+        "cuda": "11.7",
         "python": "3.10",
         "torch": "1.13.0",
         "torchvision": "0.14.0",
@@ -231,7 +231,7 @@
         "torchtext": "0.14.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.10-torch1.13"
+        "jonghwanhyeon/ml:cuda11.7-python3.10-torch1.13"
       ]
     },
     {
@@ -283,10 +283,10 @@
     {
       "dockerfile": "jupyterlab/Dockerfile",
       "arguments": {
-        "tag": "cuda11.8-python3.10-torch1.13"
+        "tag": "cuda11.7-python3.10-torch1.13"
       },
       "tags": [
-        "jonghwanhyeon/jupyterlab:cuda11.8-python3.10-torch1.13"
+        "jonghwanhyeon/jupyterlab:cuda11.7-python3.10-torch1.13"
       ]
     },
     {
