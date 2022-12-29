@@ -70,9 +70,7 @@ def generate_readme(filename: str, config: Dict[str, Any]):
 
     tags_by_dockerfile_path = OrderedDict()
     for item in config["builds"]:
-        tags_by_dockerfile_path.setdefault(item["dockerfile_path"], []).extend(
-            item["tags"]
-        )
+        tags_by_dockerfile_path.setdefault(item["dockerfile_path"], []).extend(item["tags"])
 
     with open(filename, "w", encoding="utf-8") as output_file:
         print("# Dockerfiles", file=output_file)
