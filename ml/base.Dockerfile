@@ -21,6 +21,11 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-
         wget \
     && rm -rf /var/lib/apt/lists/*
 
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash \
+    && apt-get install --yes --no-install-recommends git-lfs \
+    && git lfs install \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN pip3 install --no-cache-dir \
         matplotlib \
         numpy \
