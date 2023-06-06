@@ -301,10 +301,10 @@
       "arguments": {
         "cuda": "11.7",
         "python": "3.9",
-        "torch": "1.13.0",
-        "torchvision": "0.14.0",
-        "torchaudio": "0.13.0",
-        "torchtext": "0.14.0"
+        "torch": "1.13.1",
+        "torchvision": "0.14.1",
+        "torchaudio": "0.13.1",
+        "torchtext": "0.14.1"
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.7-python3.9-torch1.13"
@@ -315,10 +315,10 @@
       "arguments": {
         "cuda": "11.7",
         "python": "3.10",
-        "torch": "1.13.0",
-        "torchvision": "0.14.0",
-        "torchaudio": "0.13.0",
-        "torchtext": "0.14.0"
+        "torch": "1.13.1",
+        "torchvision": "0.14.1",
+        "torchaudio": "0.13.1",
+        "torchtext": "0.14.1"
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.7-python3.10-torch1.13"
