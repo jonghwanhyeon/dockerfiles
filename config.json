@@ -143,6 +143,16 @@
     {
       "dockerfile": "ml/base.Dockerfile",
       "arguments": {
+        "cuda": "11.2",
+        "python": "3.11"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda11.2-python3.11-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
         "cuda": "11.3",
         "python": "3.9"
       },
@@ -163,6 +173,16 @@
     {
       "dockerfile": "ml/base.Dockerfile",
       "arguments": {
+        "cuda": "11.3",
+        "python": "3.11"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda11.3-python3.11-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
         "cuda": "11.7",
         "python": "3.9"
       },
@@ -178,6 +198,16 @@
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.7-python3.10-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "cuda": "11.7",
+        "python": "3.11"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda11.7-python3.11-base"
       ]
     },
     {
