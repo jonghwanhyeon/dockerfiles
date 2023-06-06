@@ -325,6 +325,48 @@
       ]
     },
     {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "11.8",
+        "python": "3.9",
+        "torch": "2.0.1",
+        "torchvision": "0.15.2",
+        "torchaudio": "2.0.2",
+        "torchtext": "0.15.2"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda11.8-python3.9-torch2.0"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "11.8",
+        "python": "3.10",
+        "torch": "2.0.1",
+        "torchvision": "0.15.2",
+        "torchaudio": "2.0.2",
+        "torchtext": "0.15.2"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda11.8-python3.10-torch2.0"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "11.8",
+        "python": "3.11",
+        "torch": "2.0.1",
+        "torchvision": "0.15.2",
+        "torchaudio": "2.0.2",
+        "torchtext": "0.15.2"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda11.8-python3.11-torch2.0"
+      ]
+    },
+    {
       "dockerfile": "ml/tensorflow.Dockerfile",
       "arguments": {
         "cuda": "11.2",
