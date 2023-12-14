@@ -49,8 +49,8 @@ def load_config(filename: str) -> Dict[str, Any]:
         if "arguments" not in build:
             build["arguments"] = {}
 
+        tags = []
         if arguments.registry is not None:
-            tags = list(build["tags"])
             for registry in arguments.registry:
                 for tag in build["tags"]:
                     tags.append(f"{registry}/{tag}")
