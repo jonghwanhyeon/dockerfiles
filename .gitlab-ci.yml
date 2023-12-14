@@ -11,4 +11,4 @@ build:
   except:
     changes:
       - "build.py"
-      - "*.md"
+      - "README.md"
