@@ -27,6 +27,7 @@ RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.d
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --no-cache-dir \
+        datasets \
         matplotlib \
         numpy \
         pandas \
@@ -37,4 +38,5 @@ RUN pip3 install --no-cache-dir \
         scipy \
         seaborn \
         tqdm \
+        transformers \
         wandb
