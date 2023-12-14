@@ -202,14 +202,14 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.9",
-        "tensorflow": "2.13.0",
-        "torch": "2.0.1",
-        "torchvision": "0.15.0",
-        "torchaudio": "2.0.0",
-        "torchtext": "0.15.0"
+        "tensorflow": "2.15.0",
+        "torch": "2.1.0",
+        "torchvision": "0.16.0",
+        "torchaudio": "2.1.0",
+        "torchtext": "0.16.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.9-tensorflow2.13-torch-2.0"
+        "jonghwanhyeon/ml:cuda11.8-python3.9-tensorflow2.15-torch-2.1"
       ]
     },
     {
@@ -217,14 +217,14 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.10",
-        "tensorflow": "2.13.0",
-        "torch": "2.0.1",
-        "torchvision": "0.15.0",
-        "torchaudio": "2.0.0",
-        "torchtext": "0.15.0"
+        "tensorflow": "2.15.0",
+        "torch": "2.1.0",
+        "torchvision": "0.16.0",
+        "torchaudio": "2.1.0",
+        "torchtext": "0.16.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.10-tensorflow2.13-torch-2.0"
+        "jonghwanhyeon/ml:cuda11.8-python3.10-tensorflow2.15-torch-2.1"
       ]
     },
     {
@@ -232,32 +232,32 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.11",
-        "tensorflow": "2.13.0",
-        "torch": "2.0.1",
-        "torchvision": "0.15.0",
-        "torchaudio": "2.0.0",
-        "torchtext": "0.15.0"
+        "tensorflow": "2.15.0",
+        "torch": "2.1.0",
+        "torchvision": "0.16.0",
+        "torchaudio": "2.1.0",
+        "torchtext": "0.16.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.11-tensorflow2.13-torch-2.0"
+        "jonghwanhyeon/ml:cuda11.8-python3.11-tensorflow2.15-torch-2.1"
       ]
     },
     {
       "dockerfile": "jupyterlab/Dockerfile",
       "arguments": {
-        "tag": "cuda11.8-python3.11-torch2.0"
+        "tag": "cuda11.8-python3.11-torch2.1"
       },
       "tags": [
-        "jonghwanhyeon/jupyterlab:cuda11.8-python3.11-torch2.0"
+        "jonghwanhyeon/jupyterlab:cuda11.8-python3.11-torch2.1"
       ]
     },
     {
       "dockerfile": "jupyterlab/Dockerfile",
       "arguments": {
-        "tag": "cuda11.8-python3.11-tensorflow2.13-torch-2.0"
+        "tag": "cuda11.8-python3.11-tensorflow2.15-torch-2.1"
       },
       "tags": [
-        "jonghwanhyeon/jupyterlab:cuda11.8-python3.11-tensorflow2.13-torch-2.0"
+        "jonghwanhyeon/jupyterlab:cuda11.8-python3.11-tensorflow2.15-torch-2.1"
       ]
     },
     {
