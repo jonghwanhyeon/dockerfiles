@@ -29,9 +29,7 @@ def fetch_available_cuda_versions() -> List[Version]:
     return sorted(Version(int(major), int(minor)) for major, minor in versions)
 
 
-def resolve_cuda_version(
-    available_cuda_versions: List[Version], current_cuda_version: Version
-) -> Version:
+def resolve_cuda_version(available_cuda_versions: List[Version], current_cuda_version: Version) -> Version:
     resolved_cuda_version = None
 
     for available_cuda_version in available_cuda_versions:
@@ -60,7 +58,7 @@ if __name__ == "__main__":
 
     subprocess.run(
         [
-            "pip3",
+            "pip",
             "install",
             "--no-cache-dir",
             f"--extra-index-url={pytorch_index_url}",

@@ -4,7 +4,7 @@ FROM ghcr.io/jonghwanhyeon/ml:${tag}
 LABEL maintainer="jonghwanhyeon93@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
 
-RUN pip3 install --no-cache-dir \
+RUN pip install --no-cache-dir \
       ipywidgets \
       jupyterlab
 
