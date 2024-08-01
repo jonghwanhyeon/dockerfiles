@@ -337,10 +337,10 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.9",
-        "tensorflow": "2.16.0"
+        "tensorflow": "2.17.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.9-tensorflow2.16"
+        "jonghwanhyeon/ml:cuda11.8-python3.9-tensorflow2.17"
       ]
     },
     {
@@ -348,10 +348,10 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.10",
-        "tensorflow": "2.16.0"
+        "tensorflow": "2.17.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.10-tensorflow2.16"
+        "jonghwanhyeon/ml:cuda11.8-python3.10-tensorflow2.17"
       ]
     },
     {
@@ -359,10 +359,10 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.11",
-        "tensorflow": "2.16.0"
+        "tensorflow": "2.17.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.11-tensorflow2.16"
+        "jonghwanhyeon/ml:cuda11.8-python3.11-tensorflow2.17"
       ]
     },
     {
@@ -370,10 +370,10 @@
       "arguments": {
         "cuda": "11.8",
         "python": "3.12",
-        "tensorflow": "2.16.0"
+        "tensorflow": "2.17.0"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.12-tensorflow2.16"
+        "jonghwanhyeon/ml:cuda11.8-python3.12-tensorflow2.17"
       ]
     },
     {
