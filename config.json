@@ -715,10 +715,10 @@
     {
       "dockerfile": "jupyterlab/Dockerfile",
       "arguments": {
-        "tag": "cuda11.8-python3.12-torch2.3"
+        "tag": "cuda11.8-python3.12-torch2.4"
       },
       "tags": [
-        "jonghwanhyeon/jupyterlab:cuda11.8-python3.12-torch2.3"
+        "jonghwanhyeon/jupyterlab:cuda11.8-python3.12-torch2.4"
       ]
     },
     {
