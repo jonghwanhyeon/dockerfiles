@@ -11,6 +11,16 @@
       ]
     },
     {
+      "dockerfile": "cuda/python/3.9/Dockerfile",
+      "arguments": {
+        "cuda": "12.1.1",
+        "ubuntu": "22.04"
+      },
+      "tags": [
+        "jonghwanhyeon/cuda:12.1-python3.9"
+      ]
+    },
+    {
       "dockerfile": "cuda/python/3.10/Dockerfile",
       "arguments": {
         "cuda": "11.8.0",
@@ -18,6 +28,16 @@
       },
       "tags": [
         "jonghwanhyeon/cuda:11.8-python3.10"
+      ]
+    },
+    {
+      "dockerfile": "cuda/python/3.10/Dockerfile",
+      "arguments": {
+        "cuda": "12.1.1",
+        "ubuntu": "22.04"
+      },
+      "tags": [
+        "jonghwanhyeon/cuda:12.1-python3.10"
       ]
     },
     {
@@ -31,6 +51,16 @@
       ]
     },
     {
+      "dockerfile": "cuda/python/3.11/Dockerfile",
+      "arguments": {
+        "cuda": "12.1.1",
+        "ubuntu": "22.04"
+      },
+      "tags": [
+        "jonghwanhyeon/cuda:12.1-python3.11"
+      ]
+    },
+    {
       "dockerfile": "cuda/python/3.12/Dockerfile",
       "arguments": {
         "cuda": "11.8.0",
@@ -38,6 +68,16 @@
       },
       "tags": [
         "jonghwanhyeon/cuda:11.8-python3.12"
+      ]
+    },
+    {
+      "dockerfile": "cuda/python/3.12/Dockerfile",
+      "arguments": {
+        "cuda": "12.1.1",
+        "ubuntu": "22.04"
+      },
+      "tags": [
+        "jonghwanhyeon/cuda:12.1-python3.12"
       ]
     },
     {
@@ -53,11 +93,31 @@
     {
       "dockerfile": "ml/base.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.9"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.9-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.10"
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.10-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.10"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.10-base"
       ]
     },
     {
@@ -73,11 +133,31 @@
     {
       "dockerfile": "ml/base.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.11"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.11-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.12"
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.12-base"
+      ]
+    },
+    {
+      "dockerfile": "ml/base.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.12"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.12-base"
       ]
     },
     {
@@ -153,6 +233,20 @@
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.10",
+        "torch": "2.1.0",
+        "torchvision": "0.16.0",
+        "torchaudio": "2.1.0",
+        "torchtext": "0.16.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.10-torch2.1"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.11",
         "torch": "2.1.0",
@@ -162,6 +256,20 @@
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.11-torch2.1"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.11",
+        "torch": "2.1.0",
+        "torchvision": "0.16.0",
+        "torchaudio": "2.1.0",
+        "torchtext": "0.16.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.11-torch2.1"
       ]
     },
     {
@@ -181,6 +289,20 @@
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.9",
+        "torch": "2.2.0",
+        "torchvision": "0.17.0",
+        "torchaudio": "2.2.0",
+        "torchtext": "0.17.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.9-torch2.2"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.10",
         "torch": "2.2.0",
@@ -190,6 +312,20 @@
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.10-torch2.2"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.10",
+        "torch": "2.2.0",
+        "torchvision": "0.17.0",
+        "torchaudio": "2.2.0",
+        "torchtext": "0.17.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.10-torch2.2"
       ]
     },
     {
@@ -209,6 +345,20 @@
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.11",
+        "torch": "2.2.0",
+        "torchvision": "0.17.0",
+        "torchaudio": "2.2.0",
+        "torchtext": "0.17.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.11-torch2.2"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.12",
         "torch": "2.2.0",
@@ -218,6 +368,20 @@
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.12-torch2.2"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.12",
+        "torch": "2.2.0",
+        "torchvision": "0.17.0",
+        "torchaudio": "2.2.0",
+        "torchtext": "0.17.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.12-torch2.2"
       ]
     },
     {
@@ -237,6 +401,20 @@
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.9",
+        "torch": "2.3.0",
+        "torchvision": "0.18.0",
+        "torchaudio": "2.3.0",
+        "torchtext": "0.18.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.9-torch2.3"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.10",
         "torch": "2.3.0",
@@ -246,6 +424,20 @@
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.10-torch2.3"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.10",
+        "torch": "2.3.0",
+        "torchvision": "0.18.0",
+        "torchaudio": "2.3.0",
+        "torchtext": "0.18.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.10-torch2.3"
       ]
     },
     {
@@ -265,6 +457,20 @@
     {
       "dockerfile": "ml/torch.Dockerfile",
       "arguments": {
+        "cuda": "12.1",
+        "python": "3.11",
+        "torch": "2.3.0",
+        "torchvision": "0.18.0",
+        "torchaudio": "2.3.0",
+        "torchtext": "0.18.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.11-torch2.3"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
         "cuda": "11.8",
         "python": "3.12",
         "torch": "2.3.0",
@@ -274,6 +480,20 @@
       },
       "tags": [
         "jonghwanhyeon/ml:cuda11.8-python3.12-torch2.3"
+      ]
+    },
+    {
+      "dockerfile": "ml/torch.Dockerfile",
+      "arguments": {
+        "cuda": "12.1",
+        "python": "3.12",
+        "torch": "2.3.0",
+        "torchvision": "0.18.0",
+        "torchaudio": "2.3.0",
+        "torchtext": "0.18.0"
+      },
+      "tags": [
+        "jonghwanhyeon/ml:cuda12.1-python3.12-torch2.3"
       ]
     },
     {
