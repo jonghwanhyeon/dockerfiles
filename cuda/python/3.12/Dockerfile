@@ -1,4 +1,5 @@
 ARG cuda
+ARG cudnn
 ARG ubuntu
 FROM ubuntu:${ubuntu} as builder
 
@@ -47,7 +48,7 @@ RUN cd /usr/src/python \
     && rm -rf /usr/src/python
 
 
-FROM nvidia/cuda:${cuda}-cudnn8-devel-ubuntu${ubuntu}
+FROM nvidia/cuda:${cuda}-cudnn${cudnn}-devel-ubuntu${ubuntu}
 
 LABEL maintainer="jonghwanhyeon93@gmail.com" \
       org.opencontainers.image.source="https://github.com/jonghwanhyeon/dockerfiles"
