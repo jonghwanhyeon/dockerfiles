@@ -20,3 +20,6 @@ RUN python3 /tmp/install-torch.py \
         --torchvision=${torchvision} \
         --torchtext=${torchtext} \
     && rm /tmp/install-torch.py
+
+RUN pip3 install --no-cache-dir \
+        "transformers[torch]"
