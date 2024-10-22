@@ -1,7 +1,7 @@
 ARG cuda
 ARG cudnn
 ARG ubuntu
-FROM ubuntu:${ubuntu} as builder
+FROM ubuntu:${ubuntu} AS builder
 
 ENV PYTHON_VERSION=3.10.15
 
