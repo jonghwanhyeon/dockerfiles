@@ -8,10 +8,18 @@ ENV PYTHON_VERSION=3.12.7
 ENV LANG=C.UTF-8
 RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
 
-# Refer to https://devguide.python.org/getting-started/setup-building/#linux
+
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         build-essential \
         ca-certificates \
+        gdb \
+        lcov \
+        pkg-config \
+        wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Refer to https://devguide.python.org/getting-started/setup-building/#install-dependencies
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         libbz2-dev \
         libffi-dev \
         libgdbm-compat-dev \
@@ -21,10 +29,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-
         libreadline6-dev \
         libsqlite3-dev \
         libssl-dev \
-        pkg-config \
         tk-dev \
         uuid-dev \
-        wget \
         zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
@@ -59,6 +65,14 @@ RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/source
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         build-essential \
         ca-certificates \
+        gdb \
+        lcov \
+        pkg-config \
+        wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Refer to https://devguide.python.org/getting-started/setup-building/#install-dependencies
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         libbz2-dev \
         libffi-dev \
         libgdbm-compat-dev \
@@ -68,10 +82,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-
         libreadline6-dev \
         libsqlite3-dev \
         libssl-dev \
-        pkg-config \
         tk-dev \
         uuid-dev \
-        wget \
         zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
