@@ -1,0 +1,15 @@
+name: Clean Untagged Container Images
+
+on: workflow_dispatch
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Chizkiyahu/delete-untagged-ghcr-action@v3
+      with:
+        token: ${{ secrets.PAT_TOKEN }}
+        repository_owner: jonghwanhyeon
+        repository: dockerfiles
+        untagged_only: true
+        owner_type: user

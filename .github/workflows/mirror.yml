@@ -1,4 +1,4 @@
-name: Mirror
+name: Mirror Repository
 
 on:
   - push
@@ -16,15 +16,3 @@ jobs:
         target-url: ${{ secrets.GITLAB_REPOSITORY_URL }}
         target-username: ${{ secrets.GITLAB_USERNAME }}
         target-token: ${{ secrets.GITLAB_ACCESS_TOKEN }}
-  clean:
-    needs: [mirror]
-    runs-on: ubuntu-latest
-    steps:
-    - name: Delete all containers from repository without tags
-      uses: Chizkiyahu/delete-untagged-ghcr-action@v3
-      with:
-        token: ${{ secrets.PAT_TOKEN }}
-        repository_owner: jonghwanhyeon
-        repository: dockerfiles
-        untagged_only: true
-        owner_type: user
