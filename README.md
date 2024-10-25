@@ -77,6 +77,3 @@
 - `ghcr.io/jonghwanhyeon/jupyterlab:cuda12.1-python3.12-torch2.5`
 - `ghcr.io/jonghwanhyeon/jupyterlab:cuda12.1-python3.12-tensorflow2.17-torch-2.5`
 
-## openssh-server
-- `ghcr.io/jonghwanhyeon/openssh-server`
-
