@@ -1,14 +1,18 @@
-build:
+default:
   image: wemakeservices/wemake-dind:latest
-  stage: build
   services:
     - docker:dind
+  before_script:
+    - docker info
+
+build:
+  stage: build
   before_script:
     - docker login -u "$CI_GHCR_REGISTRY_USER" -p "$CI_GHCR_REGISTRY_PASSWORD" $CI_GHCR_REGISTRY
     - docker login -u "$CI_PRIVATE_REGISTRY_USER" -p "$CI_PRIVATE_REGISTRY_PASSWORD" $CI_PRIVATE_REGISTRY
   script:
     - python3 build.py --registry $CI_GHCR_REGISTRY  --registry $CI_PRIVATE_REGISTRY
-  except:
-    changes:
-      - "build.py"
-      - "README.md"
+  rules:
+    - changes:
+      - "**/Dockerfile"
+      - "**/*.Dockerfile"
