@@ -149,7 +149,7 @@
         "python": "3.10"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.10-base"
+        "jonghwanhyeon/ml:cuda11.8-python3.10"
       ]
     },
     {
@@ -159,7 +159,7 @@
         "python": "3.10"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.1-python3.10-base"
+        "jonghwanhyeon/ml:cuda12.1-python3.10"
       ]
     },
     {
@@ -169,7 +169,7 @@
         "python": "3.10"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.4-python3.10-base"
+        "jonghwanhyeon/ml:cuda12.4-python3.10"
       ]
     },
     {
@@ -179,7 +179,7 @@
         "python": "3.11"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.11-base"
+        "jonghwanhyeon/ml:cuda11.8-python3.11"
       ]
     },
     {
@@ -189,7 +189,7 @@
         "python": "3.11"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.1-python3.11-base"
+        "jonghwanhyeon/ml:cuda12.1-python3.11"
       ]
     },
     {
@@ -199,7 +199,7 @@
         "python": "3.11"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.4-python3.11-base"
+        "jonghwanhyeon/ml:cuda12.4-python3.11"
       ]
     },
     {
@@ -209,7 +209,7 @@
         "python": "3.12"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.12-base"
+        "jonghwanhyeon/ml:cuda11.8-python3.12"
       ]
     },
     {
@@ -219,7 +219,7 @@
         "python": "3.13"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda11.8-python3.13-base"
+        "jonghwanhyeon/ml:cuda11.8-python3.13"
       ]
     },
     {
@@ -229,7 +229,7 @@
         "python": "3.12"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.1-python3.12-base"
+        "jonghwanhyeon/ml:cuda12.1-python3.12"
       ]
     },
     {
@@ -239,7 +239,7 @@
         "python": "3.13"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.1-python3.13-base"
+        "jonghwanhyeon/ml:cuda12.1-python3.13"
       ]
     },
     {
@@ -249,7 +249,7 @@
         "python": "3.12"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.4-python3.12-base"
+        "jonghwanhyeon/ml:cuda12.4-python3.12"
       ]
     },
     {
@@ -259,7 +259,7 @@
         "python": "3.13"
       },
       "tags": [
-        "jonghwanhyeon/ml:cuda12.4-python3.13-base"
+        "jonghwanhyeon/ml:cuda12.4-python3.13"
       ]
     },
     {
