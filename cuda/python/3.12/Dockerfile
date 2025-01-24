@@ -47,7 +47,6 @@ RUN cd /usr/src/python \
         --enable-option-checking=fatal \
         --enable-shared \
         --with-lto \
-        --with-system-expat \
         --without-ensurepip \
     && make -j "$(nproc)" \
     && make install \
