@@ -3,7 +3,7 @@ ARG cudnn
 ARG ubuntu
 FROM ubuntu:${ubuntu} AS builder
 
-ENV PYTHON_VERSION=3.12.7
+ENV PYTHON_VERSION=3.12.8
 
 ENV LANG=C.UTF-8
 RUN sed --in-place "s/archive\.ubuntu\.com/mirror\.kakao\.com/g" /etc/apt/sources.list
