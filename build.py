@@ -49,12 +49,13 @@ def load_config(filename: str) -> Dict[str, Any]:
         if "arguments" not in build:
             build["arguments"] = {}
 
-        tags = []
-        if arguments.registry is not None:
-            for registry in arguments.registry:
-                for tag in build["tags"]:
-                    tags.append(f"{registry}/{tag}")
-            build["tags"] = tags
+        if build.get("push", True):
+            tags = []
+            if arguments.registry is not None:
+                for registry in arguments.registry:
+                    for tag in build["tags"]:
+                        tags.append(f"{registry}/{tag}")
+                build["tags"] = tags
 
     return config
 
@@ -70,7 +71,8 @@ def generate_readme(filename: str, config: Dict[str, Any]):
 
     tags_by_dockerfile_path = OrderedDict()
     for item in config["builds"]:
-        tags_by_dockerfile_path.setdefault(item["dockerfile_path"], []).extend(item["tags"])
+        if item.get("push", True):
+            tags_by_dockerfile_path.setdefault(item["dockerfile_path"], []).extend(item["tags"])
 
     with open(filename, "w", encoding="utf-8") as output_file:
         print("# Dockerfiles", file=output_file)
@@ -125,6 +127,8 @@ if __name__ == "__main__":
                 tags=item["tags"],
                 options=arguments.build_option,
             )
-            push(tags=item["tags"])
+
+            if item.get("push", True):
+                push(tags=item["tags"])
 
     generate_readme("README.md", config)
