@@ -46,7 +46,7 @@ RUN cd /usr/src/python \
         --enable-option-checking=fatal \
         --enable-shared \
         --with-lto \
-        --without-ensurepip \
+        --with-ensurepip \
     && make -j "$(nproc)" \
     && make install \
     && rm -rf /usr/src/python
@@ -92,10 +92,7 @@ RUN ldconfig
 
 RUN cd /usr/local/bin \
     && ln -s idle3 idle \
+    && ln -s pip3 pip \
     && ln -s pydoc3 pydoc \
     && ln -s python3 python \
     && ln -s python3-config python-config
-
-RUN wget -O /tmp/get-pip.py "https://bootstrap.pypa.io/get-pip.py" \
-    && python /tmp/get-pip.py --no-cache-dir \
-    && rm /tmp/get-pip.py
