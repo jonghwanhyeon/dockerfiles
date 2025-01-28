@@ -14,16 +14,24 @@
 - `ghcr.io/jonghwanhyeon/cuda:12.1-python3.12`
 - `ghcr.io/jonghwanhyeon/cuda:12.4-python3.12`
 
+## cuda/python/3.13
+- `ghcr.io/jonghwanhyeon/cuda:11.8-python3.13`
+- `ghcr.io/jonghwanhyeon/cuda:12.1-python3.13`
+- `ghcr.io/jonghwanhyeon/cuda:12.4-python3.13`
+
 ## ml/base
-- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.10-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.10-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.11-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.11-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.11-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.12-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.12-base`
-- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.12-base`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.10`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.10`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.11`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.11`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.11`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.12`
+- `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.13`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.12`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.1-python3.13`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.12`
+- `ghcr.io/jonghwanhyeon/ml:cuda12.4-python3.13`
 
 ## ml/torch
 - `ghcr.io/jonghwanhyeon/ml:cuda11.8-python3.10-torch2.0`
