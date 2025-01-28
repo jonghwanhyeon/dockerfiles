@@ -14,5 +14,6 @@ build:
     - python3 build.py --registry $CI_GHCR_REGISTRY  --registry $CI_PRIVATE_REGISTRY
   rules:
     - changes:
+      - "config.json"
       - "**/Dockerfile"
       - "**/*.Dockerfile"
